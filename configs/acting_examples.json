@@ -1,0 +1,74 @@
+[
+  {
+    "input": "Initial Answer: To improve your safety on public transit, plan your routes and keep belongings secure. Next Steps: Specify your time preferences and concerns like pickpocketing or poor lighting.",
+    "output": {
+      "title": "Transit Safety Tips",
+      "initial_answer": "Plan your routes and secure your belongings while using public transit. Select your travel times and safety concerns for tailored tips.",
+      "ui_elements": [
+        {
+          "type": "Slider",
+          "label": "Travel Time",
+          "range": ["Morning", "Afternoon", "Evening", "Night"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Safety Concerns",
+          "options": ["Pickpocketing", "Poor lighting", "Crowded stops"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Additional Safety Measures",
+          "options": ["Avoid empty carriages", "Stay near exits", "Use safety apps"]
+        }
+      ]
+    }
+  },
+  {
+    "input": "Initial Answer: Distraction theft prevention involves securing valuables and staying alert. Next Steps: Indicate the items you carry and your comfort with safety gear like discreet wallets.",
+    "output": {
+      "title": "Avoid Distraction Theft",
+      "initial_answer": "Stay alert and secure your valuables to avoid distraction theft. Select items you carry and your preferred safety gear.",
+      "ui_elements": [
+        {
+          "type": "MultiSelect",
+          "label": "Items Carried",
+          "options": ["Wallet", "Phone", "Jewelry", "Backpack"]
+        },
+        {
+          "type": "RadioButtons",
+          "label": "Preferred Safety Gear",
+          "options": ["Cross-body bag", "Discreet wallet", "None"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Extra Precautionary Steps",
+          "options": ["Avoid crowded places", "Keep valuables hidden", "Use anti-theft bags"]
+        }
+      ]
+    }
+  },
+  {
+    "input": "Initial Answer: Identity theft prevention starts with protecting personal data and using strong passwords. Next Steps: Indicate which documents you handle and your main security concerns.",
+    "output": {
+      "title": "Protect Against Identity Theft",
+      "initial_answer": "Secure your personal data and use strong passwords. Choose the types of documents you handle and your security concerns.",
+      "ui_elements": [
+        {
+          "type": "Checkbox",
+          "label": "Documents Handled",
+          "options": ["ID Cards", "Bank Statements", "Tax Documents"]
+        },
+        {
+          "type": "Dropdown",
+          "label": "Security Concerns",
+          "options": ["Phishing", "Data breaches", "Public Wi-Fi"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Current Security Practices",
+          "options": ["Use VPN", "Two-factor authentication", "Password manager"]
+        }
+      ]
+    }
+  }
+]

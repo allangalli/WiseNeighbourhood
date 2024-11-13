@@ -1,0 +1,4 @@
+{
+    "conversational_prompt": "Think about how, over multiple conversation steps, you will guide the user to answer his question. What inputs will you need from the user to reach his goal? First, always provide an initial answer and then follow it up with  ␃ and precise refinement options. The user does not have access to external websites, tools, papers, or museums. The user should never have to ask, always provide CONCRETE suggestions for further refining the query or progressing the interaction. Do not add any syntactic sugar to your answer, as it is read by a bot. Always have at least 2 inputs and avoid text inputs at all cost.",
+    "ui_prompt": "Convert only the text after ␃ into a UI based on the JSON format."
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "input": "I am concerned about walking home alone late at night. Neighbourhood Safety Score: High Risk",
+        "output": {
+            "title": "Night Walk Safety in High-Risk Areas 🌃",
+            "full_answer": "Walking alone at night in a high-risk area requires taking extra precautions. Stay visible and alert. ␃ Choose your usual safety measures and specify your walking time to get tailored advice.",
+            "ui_elements": [
+                {
+                    "type": "RadioButtons",
+                    "label": "Walking Time",
+                    "options": ["Evening", "Late Night"]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Preferred Safety Measures",
+                    "options": ["Stay in well-lit areas", "Travel in groups", "Use a safety app", "Carry a safety device"]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Route Preferences",
+                    "options": ["Avoid isolated areas", "Use main streets", "Stay near busy places"]
+                }
+            ]
+        }
+    },
+    {
+        "input": "How can I protect my car from theft? Neighbourhood Safety Score: Medium Risk",
+        "output": {
+            "title": "Car Theft Prevention in Medium-Risk Areas 🚗",
+            "full_answer": "In medium-risk areas, using anti-theft measures and parking smartly can help. Keep valuables out of sight. ␃ Select where you park and the anti-theft devices you use or consider.",
+            "ui_elements": [
+                {
+                    "type": "Dropdown",
+                    "label": "Parking Location",
+                    "options": ["Street", "Garage", "Driveway"]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Anti-Theft Devices",
+                    "options": ["Car alarm", "Steering lock", "GPS tracker", "None"]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Security Concerns",
+                    "options": ["Car theft", "Vandalism", "Break-ins"]
+                }
+            ]
+        }
+    },
+    {
+        "input": "What should I do to make my home safer from break-ins? Neighbourhood Safety Score: Low Risk",
+        "output": {
+            "title": "Home Security Basics for Low-Risk Areas 🏡",
+            "full_answer": "Even in a low-risk area, securing windows and using smart lighting can be effective. ␃ Indicate your home setup and interest level in security technology.",
+            "ui_elements": [
+                {
+                    "type": "RadioButtons",
+                    "label": "Home Type",
+                    "options": ["Apartment", "Single-family home", "Townhouse"]
+                },
+                {
+                    "type": "Slider",
+                    "label": "Interest in Security Tech",
+                    "range": [1, 10]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Current Security Measures",
+                    "options": ["Window locks", "Motion-activated lights", "Smart doorbell", "None"]
+                }
+            ]
+        }
+    },
+    {
+        "input": "How can I reduce the risk of being assaulted while jogging? Neighbourhood Safety Score: High Risk",
+        "output": {
+            "title": "Jogging Safety in High-Risk Areas 🏃‍♂️",
+            "full_answer": "Jogging in a high-risk area requires extra vigilance. Choose busy trails and run during daylight. ␃ Select your jogging frequency and preferred safety measures.",
+            "ui_elements": [
+                {
+                    "type": "Slider",
+                    "label": "Jogging Frequency (Days per Week)",
+                    "range": [1, 7]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Safety Gear",
+                    "options": ["Reflective clothing", "Whistle", "Pepper spray", "Running buddy"]
+                },
+                {
+                    "type": "RadioButtons",
+                    "label": "Preferred Jogging Time",
+                    "options": ["Morning", "Afternoon", "Daylight only"]
+                }
+            ]
+        }
+    },
+    {
+        "input": "What precautions should I take when leaving my house for vacation? Neighbourhood Safety Score: Medium Risk",
+        "output": {
+            "title": "Vacation Home Safety for Medium-Risk Areas ✈️",
+            "full_answer": "Before leaving for vacation in a medium-risk area, ensure your home is secure. ␃ Select your vacation duration and current security practices.",
+            "ui_elements": [
+                {
+                    "type": "Slider",
+                    "label": "Vacation Duration (Days)",
+                    "range": [1, 30]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Security Practices",
+                    "options": ["Use light timers", "Ask a neighbor to check in", "Stop mail delivery", "None"]
+                },
+                {
+                    "type": "Checkbox",
+                    "label": "Extra Security Options",
+                    "options": ["Install security cameras", "Smart locks", "Alarm system"]
+                }
+            ]
+        }
+    }
+]

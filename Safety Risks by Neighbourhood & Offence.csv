@@ -1,0 +1,629 @@
+﻿Neighbourhood,Offence Group,Safety Risk
+Agincourt North (129),Assault,Low
+Agincourt North (129),Auto Theft,Medium
+Agincourt North (129),Break and Enter,Low
+Agincourt North (129),Robbery,Medium
+Agincourt South-Malvern West (128),Assault,Medium
+Agincourt South-Malvern West (128),Break and Enter,Medium
+Agincourt South-Malvern West (128),Auto Theft,Medium
+Agincourt South-Malvern West (128),Robbery,Medium
+Alderwood (20),Assault,Low
+Alderwood (20),Break and Enter,Medium
+Alderwood (20),Auto Theft,Medium
+Alderwood (20),Robbery,Low
+Annex (95),Assault,High
+Annex (95),Break and Enter,High
+Annex (95),Robbery,High
+Annex (95),Auto Theft,Low
+Avondale (153),Assault,Low
+Avondale (153),Auto Theft,Low
+Avondale (153),Break and Enter,Low
+Avondale (153),Robbery,Low
+Banbury-Don Mills (42),Assault,Low
+Banbury-Don Mills (42),Break and Enter,Medium
+Banbury-Don Mills (42),Auto Theft,Medium
+Banbury-Don Mills (42),Robbery,Low
+Bathurst Manor (34),Assault,Low
+Bathurst Manor (34),Auto Theft,Medium
+Bathurst Manor (34),Break and Enter,Medium
+Bathurst Manor (34),Robbery,Low
+Bay-Cloverhill (169),Assault,Medium
+Bay-Cloverhill (169),Break and Enter,High
+Bay-Cloverhill (169),Robbery,Medium
+Bay-Cloverhill (169),Auto Theft,Low
+Bayview Village (52),Assault,Low
+Bayview Village (52),Break and Enter,Medium
+Bayview Village (52),Auto Theft,Medium
+Bayview Village (52),Robbery,Low
+Bayview Woods-Steeles (49),Assault,Low
+Bayview Woods-Steeles (49),Break and Enter,Medium
+Bayview Woods-Steeles (49),Auto Theft,Medium
+Bayview Woods-Steeles (49),Robbery,Low
+Bedford Park-Nortown (39),Break and Enter,High
+Bedford Park-Nortown (39),Auto Theft,High
+Bedford Park-Nortown (39),Assault,Low
+Bedford Park-Nortown (39),Robbery,Low
+Beechborough-Greenbrook (112),Assault,High
+Beechborough-Greenbrook (112),Break and Enter,Medium
+Beechborough-Greenbrook (112),Auto Theft,Medium
+Beechborough-Greenbrook (112),Robbery,High
+Bendale South (157),Assault,Medium
+Bendale South (157),Break and Enter,Medium
+Bendale South (157),Auto Theft,Medium
+Bendale South (157),Robbery,Medium
+Bendale-Glen Andrew (156),Assault,Medium
+Bendale-Glen Andrew (156),Auto Theft,High
+Bendale-Glen Andrew (156),Robbery,High
+Bendale-Glen Andrew (156),Break and Enter,Low
+Birchcliffe-Cliffside (122),Assault,Medium
+Birchcliffe-Cliffside (122),Break and Enter,Medium
+Birchcliffe-Cliffside (122),Auto Theft,Low
+Birchcliffe-Cliffside (122),Robbery,Medium
+Black Creek (24),Assault,High
+Black Creek (24),Auto Theft,High
+Black Creek (24),Break and Enter,Low
+Black Creek (24),Robbery,Medium
+Blake-Jones (69),Assault,Medium
+Blake-Jones (69),Break and Enter,Medium
+Blake-Jones (69),Robbery,Medium
+Blake-Jones (69),Auto Theft,Low
+Briar Hill-Belgravia (108),Assault,Medium
+Briar Hill-Belgravia (108),Break and Enter,Medium
+Briar Hill-Belgravia (108),Auto Theft,Medium
+Briar Hill-Belgravia (108),Robbery,Medium
+Bridle Path-Sunnybrook-York Mills (41),Break and Enter,High
+Bridle Path-Sunnybrook-York Mills (41),Assault,Low
+Bridle Path-Sunnybrook-York Mills (41),Auto Theft,Medium
+Bridle Path-Sunnybrook-York Mills (41),Robbery,Low
+Broadview North (57),Assault,Medium
+Broadview North (57),Break and Enter,Low
+Broadview North (57),Auto Theft,Low
+Broadview North (57),Robbery,Low
+Brookhaven-Amesbury (30),Assault,Medium
+Brookhaven-Amesbury (30),Auto Theft,Medium
+Brookhaven-Amesbury (30),Break and Enter,Medium
+Brookhaven-Amesbury (30),Robbery,Medium
+Cabbagetown-South St.James Town (71),Assault,High
+Cabbagetown-South St.James Town (71),Break and Enter,High
+Cabbagetown-South St.James Town (71),Robbery,High
+Cabbagetown-South St.James Town (71),Auto Theft,Low
+Caledonia-Fairbank (109),Assault,Medium
+Caledonia-Fairbank (109),Break and Enter,Low
+Caledonia-Fairbank (109),Auto Theft,Low
+Caledonia-Fairbank (109),Robbery,Medium
+Casa Loma (96),Assault,Low
+Casa Loma (96),Break and Enter,Medium
+Casa Loma (96),Auto Theft,Low
+Casa Loma (96),Robbery,Low
+Centennial Scarborough (133),Assault,Low
+Centennial Scarborough (133),Auto Theft,Low
+Centennial Scarborough (133),Break and Enter,Low
+Centennial Scarborough (133),Robbery,Low
+Church-Wellesley (167),Assault,High
+Church-Wellesley (167),Break and Enter,High
+Church-Wellesley (167),Robbery,High
+Church-Wellesley (167),Auto Theft,Low
+Clairlea-Birchmount (120),Assault,High
+Clairlea-Birchmount (120),Break and Enter,Medium
+Clairlea-Birchmount (120),Auto Theft,Medium
+Clairlea-Birchmount (120),Robbery,Medium
+Clanton Park (33),Assault,Low
+Clanton Park (33),Auto Theft,High
+Clanton Park (33),Break and Enter,Medium
+Clanton Park (33),Robbery,Low
+Cliffcrest (123),Assault,Medium
+Cliffcrest (123),Break and Enter,Medium
+Cliffcrest (123),Auto Theft,Medium
+Cliffcrest (123),Robbery,Medium
+Corso Italia-Davenport (92),Assault,Medium
+Corso Italia-Davenport (92),Break and Enter,Medium
+Corso Italia-Davenport (92),Auto Theft,Medium
+Corso Italia-Davenport (92),Robbery,Medium
+Danforth (66),Assault,High
+Danforth (66),Break and Enter,High
+Danforth (66),Robbery,High
+Danforth (66),Auto Theft,Medium
+Danforth East York (59),Assault,Low
+Danforth East York (59),Break and Enter,Low
+Danforth East York (59),Auto Theft,Low
+Danforth East York (59),Robbery,Low
+Don Valley Village (47),Assault,Medium
+Don Valley Village (47),Auto Theft,Medium
+Don Valley Village (47),Break and Enter,Low
+Don Valley Village (47),Robbery,Medium
+Dorset Park (126),Assault,Medium
+Dorset Park (126),Break and Enter,Medium
+Dorset Park (126),Auto Theft,Medium
+Dorset Park (126),Robbery,Medium
+Dovercourt Village (172),Assault,Medium
+Dovercourt Village (172),Break and Enter,High
+Dovercourt Village (172),Auto Theft,Medium
+Dovercourt Village (172),Robbery,High
+Downsview (155),Assault,Medium
+Downsview (155),Auto Theft,High
+Downsview (155),Break and Enter,Medium
+Downsview (155),Robbery,Medium
+Downtown Yonge East (168),Assault,High
+Downtown Yonge East (168),Break and Enter,High
+Downtown Yonge East (168),Robbery,High
+Downtown Yonge East (168),Auto Theft,Medium
+Dufferin Grove (83),Assault,Medium
+Dufferin Grove (83),Break and Enter,Medium
+Dufferin Grove (83),Robbery,High
+Dufferin Grove (83),Auto Theft,Low
+East End-Danforth (62),Assault,Medium
+East End-Danforth (62),Break and Enter,Medium
+East End-Danforth (62),Auto Theft,Low
+East End-Danforth (62),Robbery,Medium
+East L'Amoreaux (148),Assault,Low
+East L'Amoreaux (148),Break and Enter,Low
+East L'Amoreaux (148),Auto Theft,Low
+East L'Amoreaux (148),Robbery,Medium
+East Willowdale (152),Break and Enter,Medium
+East Willowdale (152),Assault,Low
+East Willowdale (152),Auto Theft,Medium
+East Willowdale (152),Robbery,Medium
+Edenbridge-Humber Valley (9),Break and Enter,Medium
+Edenbridge-Humber Valley (9),Auto Theft,Medium
+Edenbridge-Humber Valley (9),Assault,Low
+Edenbridge-Humber Valley (9),Robbery,Low
+Eglinton East (138),Assault,Medium
+Eglinton East (138),Break and Enter,Medium
+Eglinton East (138),Auto Theft,Medium
+Eglinton East (138),Robbery,Medium
+Elms-Old Rexdale (5),Assault,Medium
+Elms-Old Rexdale (5),Auto Theft,High
+Elms-Old Rexdale (5),Break and Enter,Low
+Elms-Old Rexdale (5),Robbery,Medium
+Englemount-Lawrence (32),Assault,Low
+Englemount-Lawrence (32),Break and Enter,Medium
+Englemount-Lawrence (32),Auto Theft,Medium
+Englemount-Lawrence (32),Robbery,Medium
+Eringate-Centennial-West Deane (11),Assault,Low
+Eringate-Centennial-West Deane (11),Auto Theft,High
+Eringate-Centennial-West Deane (11),Break and Enter,Low
+Eringate-Centennial-West Deane (11),Robbery,Low
+Etobicoke City Centre (159),Assault,Medium
+Etobicoke City Centre (159),Auto Theft,High
+Etobicoke City Centre (159),Break and Enter,Medium
+Etobicoke City Centre (159),Robbery,Medium
+Etobicoke West Mall (13),Assault,Low
+Etobicoke West Mall (13),Auto Theft,Medium
+Etobicoke West Mall (13),Break and Enter,Low
+Etobicoke West Mall (13),Robbery,Low
+Fenside-Parkwoods (150),Assault,Medium
+Fenside-Parkwoods (150),Break and Enter,Low
+Fenside-Parkwoods (150),Auto Theft,Low
+Fenside-Parkwoods (150),Robbery,Medium
+Flemingdon Park (44),Assault,Medium
+Flemingdon Park (44),Break and Enter,Low
+Flemingdon Park (44),Auto Theft,Low
+Flemingdon Park (44),Robbery,Low
+Forest Hill North (102),Assault,Low
+Forest Hill North (102),Break and Enter,Medium
+Forest Hill North (102),Auto Theft,Medium
+Forest Hill North (102),Robbery,Medium
+Forest Hill South (101),Break and Enter,High
+Forest Hill South (101),Auto Theft,High
+Forest Hill South (101),Assault,Low
+Forest Hill South (101),Robbery,Low
+Fort York-Liberty Village (163),Assault,Medium
+Fort York-Liberty Village (163),Break and Enter,Medium
+Fort York-Liberty Village (163),Auto Theft,Low
+Fort York-Liberty Village (163),Robbery,Low
+Glenfield-Jane Heights (25),Assault,High
+Glenfield-Jane Heights (25),Auto Theft,High
+Glenfield-Jane Heights (25),Break and Enter,Low
+Glenfield-Jane Heights (25),Robbery,Medium
+Golfdale-Cedarbrae-Woburn (141),Assault,Medium
+Golfdale-Cedarbrae-Woburn (141),Break and Enter,Low
+Golfdale-Cedarbrae-Woburn (141),Auto Theft,Medium
+Golfdale-Cedarbrae-Woburn (141),Robbery,Medium
+Greenwood-Coxwell (65),Assault,Medium
+Greenwood-Coxwell (65),Break and Enter,Medium
+Greenwood-Coxwell (65),Auto Theft,Medium
+Greenwood-Coxwell (65),Robbery,Medium
+Guildwood (140),Assault,Low
+Guildwood (140),Break and Enter,Low
+Guildwood (140),Auto Theft,Low
+Guildwood (140),Robbery,Low
+Harbourfront-CityPlace (165),Assault,Medium
+Harbourfront-CityPlace (165),Break and Enter,Medium
+Harbourfront-CityPlace (165),Auto Theft,Low
+Harbourfront-CityPlace (165),Robbery,Low
+Henry Farm (53),Assault,Low
+Henry Farm (53),Break and Enter,Low
+Henry Farm (53),Auto Theft,Low
+Henry Farm (53),Robbery,Low
+High Park North (88),Assault,Medium
+High Park North (88),Break and Enter,Medium
+High Park North (88),Auto Theft,Low
+High Park North (88),Robbery,Medium
+High Park-Swansea (87),Assault,Low
+High Park-Swansea (87),Break and Enter,Medium
+High Park-Swansea (87),Auto Theft,Low
+High Park-Swansea (87),Robbery,Low
+Highland Creek (134),Assault,Low
+Highland Creek (134),Auto Theft,Medium
+Highland Creek (134),Break and Enter,Medium
+Highland Creek (134),Robbery,Medium
+Hillcrest Village (48),Assault,Low
+Hillcrest Village (48),Break and Enter,Medium
+Hillcrest Village (48),Auto Theft,Medium
+Hillcrest Village (48),Robbery,Medium
+Humber Bay Shores (161),Assault,Low
+Humber Bay Shores (161),Break and Enter,Low
+Humber Bay Shores (161),Auto Theft,Low
+Humber Bay Shores (161),Robbery,Low
+Humber Heights-Westmount (8),Assault,Low
+Humber Heights-Westmount (8),Auto Theft,Medium
+Humber Heights-Westmount (8),Break and Enter,Medium
+Humber Heights-Westmount (8),Robbery,Low
+Humber Summit (21),Assault,High
+Humber Summit (21),Auto Theft,High
+Humber Summit (21),Break and Enter,High
+Humber Summit (21),Robbery,High
+Humbermede (22),Assault,Medium
+Humbermede (22),Auto Theft,High
+Humbermede (22),Break and Enter,Medium
+Humbermede (22),Robbery,Medium
+Humewood-Cedarvale (106),Assault,Low
+Humewood-Cedarvale (106),Break and Enter,Medium
+Humewood-Cedarvale (106),Auto Theft,Medium
+Humewood-Cedarvale (106),Robbery,Low
+Ionview (125),Assault,Medium
+Ionview (125),Break and Enter,Low
+Ionview (125),Auto Theft,Low
+Ionview (125),Robbery,Medium
+Islington (158),Assault,Low
+Islington (158),Auto Theft,Medium
+Islington (158),Break and Enter,Medium
+Islington (158),Robbery,Medium
+Junction Area (90),Assault,Medium
+Junction Area (90),Break and Enter,High
+Junction Area (90),Auto Theft,Medium
+Junction Area (90),Robbery,Medium
+Junction-Wallace Emerson (171),Assault,Medium
+Junction-Wallace Emerson (171),Break and Enter,Medium
+Junction-Wallace Emerson (171),Auto Theft,Low
+Junction-Wallace Emerson (171),Robbery,Medium
+Keelesdale-Eglinton West (110),Assault,Medium
+Keelesdale-Eglinton West (110),Auto Theft,Medium
+Keelesdale-Eglinton West (110),Break and Enter,Medium
+Keelesdale-Eglinton West (110),Robbery,Medium
+Kennedy Park (124),Assault,High
+Kennedy Park (124),Break and Enter,Medium
+Kennedy Park (124),Robbery,High
+Kennedy Park (124),Auto Theft,Medium
+Kensington-Chinatown (78),Assault,High
+Kensington-Chinatown (78),Break and Enter,High
+Kensington-Chinatown (78),Robbery,High
+Kensington-Chinatown (78),Auto Theft,Medium
+Kingsview Village-The Westway (6),Assault,Medium
+Kingsview Village-The Westway (6),Auto Theft,High
+Kingsview Village-The Westway (6),Break and Enter,Low
+Kingsview Village-The Westway (6),Robbery,Medium
+Kingsway South (15),Assault,Low
+Kingsway South (15),Auto Theft,High
+Kingsway South (15),Break and Enter,Medium
+Kingsway South (15),Robbery,Medium
+Lambton Baby Point (114),Assault,Low
+Lambton Baby Point (114),Break and Enter,Low
+Lambton Baby Point (114),Auto Theft,Medium
+Lambton Baby Point (114),Robbery,Low
+L'Amoreaux West (147),Assault,Low
+L'Amoreaux West (147),Break and Enter,Low
+L'Amoreaux West (147),Auto Theft,Low
+L'Amoreaux West (147),Robbery,Medium
+Lansing-Westgate (38),Assault,Low
+Lansing-Westgate (38),Auto Theft,High
+Lansing-Westgate (38),Break and Enter,Medium
+Lansing-Westgate (38),Robbery,Medium
+Lawrence Park North (105),Auto Theft,Medium
+Lawrence Park North (105),Assault,Low
+Lawrence Park North (105),Break and Enter,Medium
+Lawrence Park North (105),Robbery,Low
+Lawrence Park South (103),Break and Enter,Medium
+Lawrence Park South (103),Auto Theft,High
+Lawrence Park South (103),Assault,Low
+Lawrence Park South (103),Robbery,Low
+Leaside-Bennington (56),Auto Theft,Medium
+Leaside-Bennington (56),Break and Enter,Medium
+Leaside-Bennington (56),Assault,Low
+Leaside-Bennington (56),Robbery,Low
+Little Portugal (84),Assault,Medium
+Little Portugal (84),Break and Enter,Medium
+Little Portugal (84),Auto Theft,Low
+Little Portugal (84),Robbery,Low
+Long Branch (19),Assault,Medium
+Long Branch (19),Break and Enter,Medium
+Long Branch (19),Auto Theft,Medium
+Long Branch (19),Robbery,Medium
+Malvern East (146),Assault,Medium
+Malvern East (146),Auto Theft,Medium
+Malvern East (146),Break and Enter,Low
+Malvern East (146),Robbery,Medium
+Malvern West (145),Assault,Medium
+Malvern West (145),Auto Theft,Medium
+Malvern West (145),Break and Enter,Low
+Malvern West (145),Robbery,Medium
+Maple Leaf (29),Assault,Low
+Maple Leaf (29),Auto Theft,Medium
+Maple Leaf (29),Break and Enter,Low
+Maple Leaf (29),Robbery,Low
+Markland Wood (12),Assault,Low
+Markland Wood (12),Auto Theft,Medium
+Markland Wood (12),Break and Enter,Medium
+Markland Wood (12),Robbery,Medium
+Milliken (130),Break and Enter,High
+Milliken (130),Auto Theft,High
+Milliken (130),Assault,Low
+Milliken (130),Robbery,Medium
+Mimico-Queensway (160),Assault,High
+Mimico-Queensway (160),Break and Enter,Medium
+Mimico-Queensway (160),Auto Theft,Medium
+Mimico-Queensway (160),Robbery,Low
+Morningside (135),Assault,Medium
+Morningside (135),Auto Theft,Medium
+Morningside (135),Break and Enter,Low
+Morningside (135),Robbery,Medium
+Morningside Heights (144),Assault,Low
+Morningside Heights (144),Auto Theft,Medium
+Morningside Heights (144),Break and Enter,Low
+Morningside Heights (144),Robbery,Low
+Moss Park (73),Assault,High
+Moss Park (73),Break and Enter,High
+Moss Park (73),Robbery,High
+Moss Park (73),Auto Theft,Medium
+Mount Dennis (115),Assault,Medium
+Mount Dennis (115),Auto Theft,Medium
+Mount Dennis (115),Break and Enter,Low
+Mount Dennis (115),Robbery,Medium
+Mount Olive-Silverstone-Jamestown (2),Assault,Medium
+Mount Olive-Silverstone-Jamestown (2),Auto Theft,Medium
+Mount Olive-Silverstone-Jamestown (2),Robbery,High
+Mount Olive-Silverstone-Jamestown (2),Break and Enter,Low
+Mount Pleasant East (99),Assault,Low
+Mount Pleasant East (99),Break and Enter,Medium
+Mount Pleasant East (99),Auto Theft,Medium
+Mount Pleasant East (99),Robbery,Low
+New Toronto (18),Assault,High
+New Toronto (18),Break and Enter,Medium
+New Toronto (18),Auto Theft,Medium
+New Toronto (18),Robbery,Medium
+Newtonbrook East (50),Assault,Medium
+Newtonbrook East (50),Break and Enter,Medium
+Newtonbrook East (50),Auto Theft,Medium
+Newtonbrook East (50),Robbery,Medium
+Newtonbrook West (36),Assault,Medium
+Newtonbrook West (36),Auto Theft,High
+Newtonbrook West (36),Break and Enter,Medium
+Newtonbrook West (36),Robbery,Medium
+North Riverdale (68),Assault,Medium
+North Riverdale (68),Break and Enter,Medium
+North Riverdale (68),Auto Theft,Low
+North Riverdale (68),Robbery,Medium
+North St.James Town (74),Assault,High
+North St.James Town (74),Break and Enter,Medium
+North St.James Town (74),Robbery,High
+North St.James Town (74),Auto Theft,Low
+North Toronto (173),Assault,Medium
+North Toronto (173),Break and Enter,Medium
+North Toronto (173),Auto Theft,Low
+North Toronto (173),Robbery,Low
+Oakdale-Beverley Heights (154),Assault,High
+Oakdale-Beverley Heights (154),Auto Theft,High
+Oakdale-Beverley Heights (154),Break and Enter,Medium
+Oakdale-Beverley Heights (154),Robbery,High
+Oakridge (121),Assault,High
+Oakridge (121),Break and Enter,High
+Oakridge (121),Robbery,High
+Oakridge (121),Auto Theft,Low
+Oakwood Village (107),Assault,Medium
+Oakwood Village (107),Break and Enter,Low
+Oakwood Village (107),Auto Theft,Medium
+Oakwood Village (107),Robbery,Medium
+O'Connor-Parkview (54),Assault,Medium
+O'Connor-Parkview (54),Break and Enter,Medium
+O'Connor-Parkview (54),Auto Theft,Medium
+O'Connor-Parkview (54),Robbery,Low
+Old East York (58),Assault,Medium
+Old East York (58),Break and Enter,Medium
+Old East York (58),Auto Theft,Low
+Old East York (58),Robbery,Medium
+Palmerston-Little Italy (80),Assault,Medium
+Palmerston-Little Italy (80),Break and Enter,Medium
+Palmerston-Little Italy (80),Auto Theft,Low
+Palmerston-Little Italy (80),Robbery,Medium
+Parkwoods-O'Connor Hills (149),Assault,Low
+Parkwoods-O'Connor Hills (149),Break and Enter,Medium
+Parkwoods-O'Connor Hills (149),Auto Theft,Medium
+Parkwoods-O'Connor Hills (149),Robbery,Low
+Pelmo Park-Humberlea (23),Assault,Medium
+Pelmo Park-Humberlea (23),Auto Theft,High
+Pelmo Park-Humberlea (23),Break and Enter,Medium
+Pelmo Park-Humberlea (23),Robbery,Medium
+Playter Estates-Danforth (67),Assault,High
+Playter Estates-Danforth (67),Break and Enter,High
+Playter Estates-Danforth (67),Auto Theft,Medium
+Playter Estates-Danforth (67),Robbery,High
+Pleasant View (46),Assault,Low
+Pleasant View (46),Auto Theft,Low
+Pleasant View (46),Break and Enter,Low
+Pleasant View (46),Robbery,Low
+Princess-Rosethorn (10),Auto Theft,High
+Princess-Rosethorn (10),Break and Enter,Medium
+Princess-Rosethorn (10),Assault,Low
+Princess-Rosethorn (10),Robbery,Medium
+Regent Park (72),Assault,High
+Regent Park (72),Break and Enter,Medium
+Regent Park (72),Robbery,High
+Regent Park (72),Auto Theft,Low
+Rexdale-Kipling (4),Assault,Medium
+Rexdale-Kipling (4),Auto Theft,High
+Rexdale-Kipling (4),Break and Enter,Medium
+Rexdale-Kipling (4),Robbery,High
+Rockcliffe-Smythe (111),Assault,Medium
+Rockcliffe-Smythe (111),Auto Theft,Medium
+Rockcliffe-Smythe (111),Break and Enter,Low
+Rockcliffe-Smythe (111),Robbery,Medium
+Roncesvalles (86),Assault,Medium
+Roncesvalles (86),Break and Enter,High
+Roncesvalles (86),Robbery,High
+Roncesvalles (86),Auto Theft,Low
+Rosedale-Moore Park (98),Assault,Medium
+Rosedale-Moore Park (98),Break and Enter,High
+Rosedale-Moore Park (98),Auto Theft,Medium
+Rosedale-Moore Park (98),Robbery,Medium
+Runnymede-Bloor West Village (89),Assault,Low
+Runnymede-Bloor West Village (89),Break and Enter,Medium
+Runnymede-Bloor West Village (89),Auto Theft,Medium
+Runnymede-Bloor West Village (89),Robbery,Medium
+Rustic (28),Assault,Medium
+Rustic (28),Auto Theft,Medium
+Rustic (28),Break and Enter,Low
+Rustic (28),Robbery,Medium
+Scarborough Village (139),Assault,High
+Scarborough Village (139),Break and Enter,Medium
+Scarborough Village (139),Auto Theft,Medium
+Scarborough Village (139),Robbery,Medium
+South Eglinton-Davisville (174),Assault,Low
+South Eglinton-Davisville (174),Break and Enter,Medium
+South Eglinton-Davisville (174),Auto Theft,Low
+South Eglinton-Davisville (174),Robbery,Low
+South Parkdale (85),Assault,High
+South Parkdale (85),Break and Enter,Medium
+South Parkdale (85),Auto Theft,Low
+South Parkdale (85),Robbery,Medium
+South Riverdale (70),Assault,Medium
+South Riverdale (70),Break and Enter,High
+South Riverdale (70),Auto Theft,Medium
+South Riverdale (70),Robbery,Medium
+St.Andrew-Windfields (40),Break and Enter,High
+St.Andrew-Windfields (40),Assault,Low
+St.Andrew-Windfields (40),Auto Theft,Medium
+St.Andrew-Windfields (40),Robbery,Low
+Steeles (116),Break and Enter,Medium
+Steeles (116),Assault,Low
+Steeles (116),Auto Theft,Medium
+Steeles (116),Robbery,Low
+Stonegate-Queensway (16),Assault,Low
+Stonegate-Queensway (16),Auto Theft,Medium
+Stonegate-Queensway (16),Break and Enter,Medium
+Stonegate-Queensway (16),Robbery,Low
+Tam O'Shanter-Sullivan (118),Assault,Low
+Tam O'Shanter-Sullivan (118),Break and Enter,Medium
+Tam O'Shanter-Sullivan (118),Auto Theft,Medium
+Tam O'Shanter-Sullivan (118),Robbery,Medium
+Taylor-Massey (61),Assault,Medium
+Taylor-Massey (61),Break and Enter,Medium
+Taylor-Massey (61),Robbery,Medium
+Taylor-Massey (61),Auto Theft,Low
+The Beaches (63),Assault,Low
+The Beaches (63),Break and Enter,Medium
+The Beaches (63),Auto Theft,Medium
+The Beaches (63),Robbery,Low
+Thistletown-Beaumond Heights (3),Assault,Medium
+Thistletown-Beaumond Heights (3),Auto Theft,High
+Thistletown-Beaumond Heights (3),Break and Enter,Medium
+Thistletown-Beaumond Heights (3),Robbery,Medium
+Thorncliffe Park (55),Assault,Medium
+Thorncliffe Park (55),Break and Enter,Low
+Thorncliffe Park (55),Auto Theft,Low
+Thorncliffe Park (55),Robbery,Low
+Trinity-Bellwoods (81),Assault,Medium
+Trinity-Bellwoods (81),Break and Enter,High
+Trinity-Bellwoods (81),Auto Theft,Medium
+Trinity-Bellwoods (81),Robbery,Medium
+University (79),Assault,High
+University (79),Break and Enter,High
+University (79),Robbery,High
+University (79),Auto Theft,Medium
+Victoria Village (43),Assault,Medium
+Victoria Village (43),Break and Enter,Medium
+Victoria Village (43),Auto Theft,Medium
+Victoria Village (43),Robbery,Low
+Wellington Place (164),Assault,High
+Wellington Place (164),Break and Enter,High
+Wellington Place (164),Auto Theft,Medium
+Wellington Place (164),Robbery,Medium
+West Hill (136),Assault,High
+West Hill (136),Break and Enter,Medium
+West Hill (136),Robbery,High
+West Hill (136),Auto Theft,Medium
+West Humber-Clairville (1),Auto Theft,High
+West Humber-Clairville (1),Assault,Medium
+West Humber-Clairville (1),Break and Enter,High
+West Humber-Clairville (1),Robbery,High
+West Queen West (162),Assault,Medium
+West Queen West (162),Break and Enter,Medium
+West Queen West (162),Auto Theft,Low
+West Queen West (162),Robbery,Low
+West Rouge (143),Assault,Low
+West Rouge (143),Auto Theft,Medium
+West Rouge (143),Break and Enter,Low
+West Rouge (143),Robbery,Low
+Westminster-Branson (35),Assault,Low
+Westminster-Branson (35),Auto Theft,Medium
+Westminster-Branson (35),Break and Enter,Low
+Westminster-Branson (35),Robbery,Low
+Weston (113),Assault,High
+Weston (113),Auto Theft,High
+Weston (113),Break and Enter,Medium
+Weston (113),Robbery,High
+Weston-Pelham Park (91),Assault,High
+Weston-Pelham Park (91),Break and Enter,Medium
+Weston-Pelham Park (91),Auto Theft,Medium
+Weston-Pelham Park (91),Robbery,Medium
+Wexford/Maryvale (119),Assault,Medium
+Wexford/Maryvale (119),Auto Theft,High
+Wexford/Maryvale (119),Break and Enter,Medium
+Wexford/Maryvale (119),Robbery,Medium
+Willowdale West (37),Assault,Medium
+Willowdale West (37),Break and Enter,Low
+Willowdale West (37),Auto Theft,Medium
+Willowdale West (37),Robbery,Medium
+Willowridge-Martingrove-Richview (7),Assault,Low
+Willowridge-Martingrove-Richview (7),Auto Theft,High
+Willowridge-Martingrove-Richview (7),Break and Enter,Low
+Willowridge-Martingrove-Richview (7),Robbery,Medium
+Woburn North (142),Assault,Medium
+Woburn North (142),Break and Enter,Medium
+Woburn North (142),Auto Theft,Medium
+Woburn North (142),Robbery,Medium
+Woodbine Corridor (64),Assault,Medium
+Woodbine Corridor (64),Break and Enter,Medium
+Woodbine Corridor (64),Auto Theft,Low
+Woodbine Corridor (64),Robbery,Medium
+Woodbine-Lumsden (60),Assault,Low
+Woodbine-Lumsden (60),Break and Enter,Low
+Woodbine-Lumsden (60),Auto Theft,Low
+Woodbine-Lumsden (60),Robbery,Low
+Wychwood (94),Assault,Medium
+Wychwood (94),Break and Enter,Medium
+Wychwood (94),Auto Theft,Medium
+Wychwood (94),Robbery,Medium
+Yonge-Bay Corridor (170),Assault,High
+Yonge-Bay Corridor (170),Break and Enter,High
+Yonge-Bay Corridor (170),Robbery,High
+Yonge-Bay Corridor (170),Auto Theft,Medium
+Yonge-Doris (151),Assault,Low
+Yonge-Doris (151),Auto Theft,Low
+Yonge-Doris (151),Break and Enter,Low
+Yonge-Doris (151),Robbery,Medium
+Yonge-Eglinton (100),Assault,Medium
+Yonge-Eglinton (100),Break and Enter,Medium
+Yonge-Eglinton (100),Auto Theft,Low
+Yonge-Eglinton (100),Robbery,Medium
+Yonge-St.Clair (97),Assault,Low
+Yonge-St.Clair (97),Break and Enter,Medium
+Yonge-St.Clair (97),Auto Theft,Low
+Yonge-St.Clair (97),Robbery,Low
+York University Heights (27),Assault,High
+York University Heights (27),Auto Theft,High
+York University Heights (27),Break and Enter,High
+York University Heights (27),Robbery,High
+Yorkdale-Glen Park (31),Assault,High
+Yorkdale-Glen Park (31),Auto Theft,High
+Yorkdale-Glen Park (31),Break and Enter,High
+Yorkdale-Glen Park (31),Robbery,High
