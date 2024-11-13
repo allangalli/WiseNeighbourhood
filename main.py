@@ -175,15 +175,13 @@ def main():
         else:
             print(len(st.session_state.messages))
             print(st.session_state.messages)
-        if len(st.session_state.messages) >= 6:
-            print(st.session_state.messages)
-            exit()
-
         col1, col2 = chat_container.columns(2)
 
         if col1.button("Submit", type="primary", use_container_width=True):
             # Check if the input text is not empty
-            if st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
+            if len(st.session_state.messages) >= 6:
+                st.write("## Placeholder: LLM output after intake information pass")
+            elif st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
                 handle_submission()
             else:
                 st.warning("Please enter some text before submitting.")

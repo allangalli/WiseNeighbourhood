@@ -28,6 +28,7 @@ class Agent:
     def update_model(self, model):
         """Updates the agent's model."""
         self.model = model
+        print(model)
 
     def get_model(self):
         """Returns the agent's model."""
