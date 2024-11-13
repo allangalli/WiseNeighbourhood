@@ -1,72 +1,275 @@
 [
   {
-    "input": "Initial Answer: To improve your safety on public transit, plan your routes and keep belongings secure. Next Steps: Specify your time preferences and concerns like pickpocketing or poor lighting.",
+    "input": "Neighbourhood: Agincourt North (129) - Assault: Low, Auto Theft: Medium, Break and Enter: Low, Robbery: Medium",
     "output": {
-      "title": "Transit Safety Tips",
-      "initial_answer": "Plan your routes and secure your belongings while using public transit. Select your travel times and safety concerns for tailored tips.",
+      "title": "Crime Type Focus in Agincourt North",
+      "initial_answer": "Agincourt North has varying safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Low), Robbery (Medium). ␃ Which crime type would you like to focus on?",
       "ui_elements": [
-        {
-          "type": "Slider",
-          "label": "Travel Time",
-          "range": ["Morning", "Afternoon", "Evening", "Night"]
-        },
-        {
-          "type": "Checkbox",
-          "label": "Safety Concerns",
-          "options": ["Pickpocketing", "Poor lighting", "Crowded stops"]
-        },
-        {
-          "type": "Checkbox",
-          "label": "Additional Safety Measures",
-          "options": ["Avoid empty carriages", "Stay near exits", "Use safety apps"]
-        }
-      ]
-    }
-  },
-  {
-    "input": "Initial Answer: Distraction theft prevention involves securing valuables and staying alert. Next Steps: Indicate the items you carry and your comfort with safety gear like discreet wallets.",
-    "output": {
-      "title": "Avoid Distraction Theft",
-      "initial_answer": "Stay alert and secure your valuables to avoid distraction theft. Select items you carry and your preferred safety gear.",
-      "ui_elements": [
-        {
-          "type": "MultiSelect",
-          "label": "Items Carried",
-          "options": ["Wallet", "Phone", "Jewelry", "Backpack"]
-        },
         {
           "type": "RadioButtons",
-          "label": "Preferred Safety Gear",
-          "options": ["Cross-body bag", "Discreet wallet", "None"]
+          "label": "Crime Type",
+          "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Concerns in Your Area",
+          "options": ["Poor Lighting", "Unmonitored Parking Lots", "Isolated Streets", "Vandalism"]
         },
         {
           "type": "Checkbox",
-          "label": "Extra Precautionary Steps",
-          "options": ["Avoid crowded places", "Keep valuables hidden", "Use anti-theft bags"]
+          "label": "Would you like to receive general safety tips? (Yes/No)"
         }
       ]
     }
   },
   {
-    "input": "Initial Answer: Identity theft prevention starts with protecting personal data and using strong passwords. Next Steps: Indicate which documents you handle and your main security concerns.",
+    "input": "Selected Crime Type: Auto Theft\nNeighbourhood: Agincourt North (129) - Auto Theft: Medium",
     "output": {
-      "title": "Protect Against Identity Theft",
-      "initial_answer": "Secure your personal data and use strong passwords. Choose the types of documents you handle and your security concerns.",
+      "title": "Auto Theft Prevention in Agincourt North",
+      "initial_answer": "Auto Theft in Agincourt North is rated as Medium risk. Consider parking in well-lit areas and using a steering wheel lock. ␃ How do you usually park your vehicle?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Parking Location",
+          "options": ["Street", "Garage", "Driveway"]
+        },
+        {
+          "type": "Slider",
+          "label": "Frequency of Leaving Valuables in the Car (Times per Week)",
+          "range": [0, 10]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you use anti-theft devices? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Robbery\nNeighbourhood: Agincourt South-Malvern West (128) - Robbery: Medium",
+    "output": {
+      "title": "Robbery Prevention in Agincourt South-Malvern West",
+      "initial_answer": "Robbery in Agincourt South-Malvern West is rated as Medium risk. Stay aware of your surroundings, especially at night. ␃ Do you prefer walking alone or in groups?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Walking Preference",
+          "options": ["Alone", "In Groups"]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Common Walking Routes",
+          "options": ["Parks", "Residential Streets", "Commercial Areas", "Transit Stations"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you carry a personal alarm? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Break and Enter\nNeighbourhood: Annex (95) - Break and Enter: High",
+    "output": {
+      "title": "Break and Enter Prevention in Annex",
+      "initial_answer": "Break and Enter risk in Annex is High. Securing windows and using smart lighting are essential measures. ␃ Have you installed any security measures at your home?",
       "ui_elements": [
         {
           "type": "Checkbox",
-          "label": "Documents Handled",
-          "options": ["ID Cards", "Bank Statements", "Tax Documents"]
+          "label": "Do you use security cameras or alarm systems? (Yes/No)"
         },
         {
-          "type": "Dropdown",
-          "label": "Security Concerns",
-          "options": ["Phishing", "Data breaches", "Public Wi-Fi"]
+          "type": "Slider",
+          "label": "Interest in Upgrading Home Security (Scale of 1-10)",
+          "range": [1, 10]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Vulnerable Areas of Your Home",
+          "options": ["Windows", "Back Door", "Garage", "Basement"]
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Assault\nNeighbourhood: Alderwood (20) - Assault: Low",
+    "output": {
+      "title": "Assault Prevention in Alderwood",
+      "initial_answer": "Assault risk in Alderwood is Low, but it’s still important to stay vigilant. ␃ Do you carry any self-defense tools for added safety?",
+      "ui_elements": [
+        {
+          "type": "Checkbox",
+          "label": "Do you use self-defense tools? (Yes/No)"
+        },
+        {
+          "type": "Slider",
+          "label": "Frequency of Walking Alone at Night (Times per Week)",
+          "range": [1, 10]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Preferred Safety Measures",
+          "options": ["Carrying a Whistle", "Staying in Well-Lit Areas", "Using Safety Apps"]
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
+    "output": {
+      "title": "Crime Type Focus in Alderwood",
+      "initial_answer": "Alderwood has mixed safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Medium), Robbery (Low). ␃ Which crime type would you like to focus on?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Crime Type",
+          "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Are there specific areas where you feel unsafe?",
+          "options": ["Parks", "Parking Lots", "Residential Streets", "Near Public Transport"]
         },
         {
           "type": "Checkbox",
-          "label": "Current Security Practices",
-          "options": ["Use VPN", "Two-factor authentication", "Password manager"]
+          "label": "Do you want information on local safety programs? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Assault\nNeighbourhood: Annex (95) - Assault: High",
+    "output": {
+      "title": "Assault Prevention in Annex",
+      "initial_answer": "Assault risk in Annex is High. Staying alert and avoiding isolated areas is crucial. ␃ How often do you go out alone?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Frequency of Going Out Alone",
+          "options": ["Daily", "Several Times a Week", "Rarely"]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Preferred Safety Strategies",
+          "options": ["Traveling in Groups", "Carrying Pepper Spray", "Using Safety Apps"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Would you like to learn self-defense techniques? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Auto Theft\nNeighbourhood: Annex (95) - Auto Theft: Low",
+    "output": {
+      "title": "Auto Theft Prevention in Annex",
+      "initial_answer": "Auto Theft risk in Annex is Low, but taking precautions like locking your car and removing valuables is always wise. ␃ Where do you typically park your car?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Parking Location",
+          "options": ["Street", "Garage", "Driveway"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you always lock your car and close windows? (Yes/No)"
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you use any visible anti-theft deterrents? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Break and Enter\nNeighbourhood: Agincourt South-Malvern West (128) - Break and Enter: Medium",
+    "output": {
+      "title": "Break and Enter Prevention in Agincourt South-Malvern West",
+      "initial_answer": "Break and Enter risk in this neighborhood is Medium. Consider locking windows and doors and using outdoor lighting. ␃ What kind of home do you live in?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Home Type",
+          "options": ["Apartment", "Single-Family House", "Townhouse"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you have outdoor motion-sensor lights installed? (Yes/No)"
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you lock all doors and windows before leaving home? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Robbery\nNeighbourhood: Agincourt North (129) - Robbery: Medium",
+    "output": {
+      "title": "Robbery Prevention in Agincourt North",
+      "initial_answer": "Robbery risk in Agincourt North is Medium. Staying aware and keeping valuables out of sight can help prevent incidents. ␃ Do you carry valuable items often?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Valuables Carried",
+          "options": ["Always", "Sometimes", "Rarely"]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Common Safety Measures",
+          "options": ["Using Crossbody Bags", "Keeping Phone Hidden", "Avoiding Isolated Areas"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you avoid using your phone in public places? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Break and Enter\nNeighbourhood: Alderwood (20) - Break and Enter: Medium",
+    "output": {
+      "title": "Break and Enter Prevention in Alderwood",
+      "initial_answer": "Break and Enter risk in Alderwood is Medium. Reinforcing entry points and considering neighborhood watch programs are good strategies. ␃ How many entry points does your home have?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Number of Entry Points",
+          "options": ["1-2", "3-4", "5 or More"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you have reinforced locks on all entry points? (Yes/No)"
+        },
+        {
+          "type": "Checkbox",
+          "label": "Are you part of a neighborhood watch? (Yes/No)"
+        }
+      ]
+    }
+  },
+  {
+    "input": "Selected Crime Type: Assault\nNeighbourhood: Agincourt South-Malvern West (128) - Assault: Medium",
+    "output": {
+      "title": "Assault Prevention in Agincourt South-Malvern West",
+      "initial_answer": "Assault risk in this area is Medium. Staying alert and knowing your surroundings are key. ␃ When do you feel most vulnerable?",
+      "ui_elements": [
+        {
+          "type": "RadioButtons",
+          "label": "Time of Vulnerability",
+          "options": ["Early Morning", "Late Night", "Crowded Places"]
+        },
+        {
+          "type": "MultiSelect",
+          "label": "Preferred Safety Devices",
+          "options": ["Personal Alarm", "Pepper Spray", "Whistle"]
+        },
+        {
+          "type": "Checkbox",
+          "label": "Do you feel safe using public transportation? (Yes/No)"
         }
       ]
     }

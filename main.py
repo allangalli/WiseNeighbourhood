@@ -3,12 +3,17 @@ from typing import Optional
 
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
+import pandas as pd
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 from llm_utils.conversation import Conversation
 from llm_utils.prompt_assembly import prompt_assembly
 from llm_utils.stream_handler import StreamUntilSpecialTokenHandler
 from streamlit_utils.initialization import initialize_session
 from streamlit_utils.ui_creator import display_ui_from_response
+from llm_utils.maps import neighbourhood_select
 
 # Page configuration
 st.set_page_config(
@@ -79,6 +84,11 @@ def get_conversation() -> Optional[Conversation]:
     """Retrieve the current conversation instance from Streamlit's session state."""
     return st.session_state.get("conversation", None)
 
+def neighbourhoods():
+    nb = './Assets/Safety Risks by Neighbourhood & Offence.csv'
+    regions = pd.read_csv(nb)
+    return regions['Neighbourhood']
+
 
 def handle_submission():
     """Process and submit user input, updating conversation history."""
@@ -142,7 +152,10 @@ def main():
     """Main function to initialize and run the Streamlit application."""
     initialize_session()
     handle_sidebar()
-    
+
+    if "expander_state" not in st.session_state:
+        st.session_state["expander_state"] = True
+
     # Dashboard Main Panel
     col = st.columns((1, 4.5, 1), gap='medium')
 
@@ -151,11 +164,10 @@ def main():
         with cent_co:
             st.image("./Assets/TPS_Logo.png", width=120)
 
-        st.markdown("<h1 style='display: flex; text-align: center;'>SmartWise - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='display: flex; text-align: center;'>SixSafety - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
         # Welcome message
-        st.write("## Welcome to SmartWise! Please let us know what area of your neighbourhood safety you'd like to learn more about.",)
-
-        # Initialize chat container
+        st.write("## Welcome! Please let us know what area of your neighbourhood safety you'd like to learn more about.",)
+        
         chat_container = st.container()
 
         # Display conversation history
@@ -168,10 +180,17 @@ def main():
                 chat_container.chat_message(msg.role).write(msg.content)
 
         if len(st.session_state.messages) == 0:
-            st.session_state.input_text = chat_container.text_input(
-                "Type what you are concerned about or what you would like to learn more about",
-                value=st.session_state.get('input_text', '')
+            neighbourhood = st.selectbox(
+                'Choose a Neighbourhood',
+                .sort_values().unique().tolist(),
+                index=None,
+                placeholder='start typing...'
             )
+    
+            st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)") 
+            print("test",neighbourhood)
+
+            st.session_state.input_text = neighbourhood_select()
         else:
             print(len(st.session_state.messages))
             print(st.session_state.messages)
@@ -181,10 +200,11 @@ def main():
             # Check if the input text is not empty
             if len(st.session_state.messages) >= 6:
                 st.write("## Placeholder: LLM output after intake information pass")
-            elif st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
-                handle_submission()
+            elif len(st.session_state.messages) == 0:
+                st.warning("Please select a neighbourhood before submitting")
             else:
-                st.warning("Please enter some text before submitting.")
+                # or st.session_state.input_text.strip():
+                handle_submission()
 
         if col2.button("Restart Session", use_container_width=True):
             st.session_state.messages = []

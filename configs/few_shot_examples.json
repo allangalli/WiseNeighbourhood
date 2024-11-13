@@ -9,16 +9,6 @@
                     "type": "RadioButtons",
                     "label": "Walking Time",
                     "options": ["Evening", "Late Night"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Preferred Safety Measures",
-                    "options": ["Stay in well-lit areas", "Travel in groups", "Use a safety app", "Carry a safety device"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Route Preferences",
-                    "options": ["Avoid isolated areas", "Use main streets", "Stay near busy places"]
                 }
             ]
         }
@@ -33,16 +23,6 @@
                     "type": "Dropdown",
                     "label": "Parking Location",
                     "options": ["Street", "Garage", "Driveway"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Anti-Theft Devices",
-                    "options": ["Car alarm", "Steering lock", "GPS tracker", "None"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Security Concerns",
-                    "options": ["Car theft", "Vandalism", "Break-ins"]
                 }
             ]
         }
@@ -62,11 +42,6 @@
                     "type": "Slider",
                     "label": "Interest in Security Tech",
                     "range": [1, 10]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Current Security Measures",
-                    "options": ["Window locks", "Motion-activated lights", "Smart doorbell", "None"]
                 }
             ]
         }
@@ -81,11 +56,6 @@
                     "type": "Slider",
                     "label": "Jogging Frequency (Days per Week)",
                     "range": [1, 7]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Safety Gear",
-                    "options": ["Reflective clothing", "Whistle", "Pepper spray", "Running buddy"]
                 },
                 {
                     "type": "RadioButtons",
@@ -105,16 +75,6 @@
                     "type": "Slider",
                     "label": "Vacation Duration (Days)",
                     "range": [1, 30]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Security Practices",
-                    "options": ["Use light timers", "Ask a neighbor to check in", "Stop mail delivery", "None"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Extra Security Options",
-                    "options": ["Install security cameras", "Smart locks", "Alarm system"]
                 }
             ]
         }
