@@ -9,6 +9,7 @@ from llm_utils.prompt_assembly import prompt_assembly
 from llm_utils.stream_handler import StreamUntilSpecialTokenHandler
 from streamlit_utils.initialization import initialize_session
 from streamlit_utils.ui_creator import display_ui_from_response
+from llm_utils.maps import neighbourhood_select
 
 # Page configuration
 st.set_page_config(
@@ -151,46 +152,50 @@ def main():
         with cent_co:
             st.image("./Assets/TPS_Logo.png", width=120)
 
-        st.markdown("<h1 style='display: flex; text-align: center;'>SmartWise - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='display: flex; text-align: center;'>SixSafety - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
         # Welcome message
-        st.write("## Welcome to SmartWise! Please let us know what area of your neighbourhood safety you'd like to learn more about.",)
+        st.write("## Welcome! Please let us know what area of your neighbourhood safety you'd like to learn more about.",)
 
-        # Initialize chat container
-        chat_container = st.container()
+        neighbourhood_select()
 
-        # Display conversation history
-        for index, msg in enumerate(st.session_state.messages):
-            if msg.role == "assistant":
-                with chat_container.chat_message("assistant"):
-                    display_ui_from_response(
-                        msg.content, index, len(st.session_state.messages) - 1)
+
+        if 'neighbourhood' in st.session_state:
+            # Initialize chat container
+            chat_container = st.container()
+
+            # Display conversation history
+            for index, msg in enumerate(st.session_state.messages):
+                if msg.role == "assistant":
+                    with chat_container.chat_message("assistant"):
+                        display_ui_from_response(
+                            msg.content, index, len(st.session_state.messages) - 1)
+                else:
+                    chat_container.chat_message(msg.role).write(msg.content)
+
+            if len(st.session_state.messages) == 0:
+                st.session_state.input_text = chat_container.text_input(
+                    "Type what you are concerned about or what you would like to learn more about",
+                    value=st.session_state.get('input_text', '')
+                )
             else:
-                chat_container.chat_message(msg.role).write(msg.content)
+                print(len(st.session_state.messages))
+                print(st.session_state.messages)
+            col1, col2 = chat_container.columns(2)
 
-        if len(st.session_state.messages) == 0:
-            st.session_state.input_text = chat_container.text_input(
-                "Type what you are concerned about or what you would like to learn more about",
-                value=st.session_state.get('input_text', '')
-            )
-        else:
-            print(len(st.session_state.messages))
-            print(st.session_state.messages)
-        col1, col2 = chat_container.columns(2)
+            if col1.button("Submit", type="primary", use_container_width=True):
+                # Check if the input text is not empty
+                if len(st.session_state.messages) >= 6:
+                    st.write("## Placeholder: LLM output after intake information pass")
+                elif st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
+                    handle_submission()
+                else:
+                    st.warning("Please enter some text before submitting.")
 
-        if col1.button("Submit", type="primary", use_container_width=True):
-            # Check if the input text is not empty
-            if len(st.session_state.messages) >= 6:
-                st.write("## Placeholder: LLM output after intake information pass")
-            elif st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
-                handle_submission()
-            else:
-                st.warning("Please enter some text before submitting.")
-
-        if col2.button("Restart Session", use_container_width=True):
-            st.session_state.messages = []
-            st.session_state.user_inputs = {}
-            st.session_state.input_text = ''
-            st.rerun()
+            if col2.button("Restart Session", use_container_width=True):
+                st.session_state.messages = []
+                st.session_state.user_inputs = {}
+                st.session_state.input_text = ''
+                st.rerun()
 
 
 if __name__ == "__main__":
