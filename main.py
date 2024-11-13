@@ -89,6 +89,25 @@ def neighbourhoods():
     regions = pd.read_csv(nb)
     return regions['Neighbourhood']
 
+def get_offence_risk(region):
+    nb = './Assets/Safety Risks by Neighbourhood & Offence.csv'
+    
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(nb)
+    
+    # Filter the DataFrame for the specified region
+    df_region = df[df['Neighbourhood'] == region]
+    
+    # Create a list of offences and their corresponding safety risks
+    offences_list = df_region[['Offence Group', 'Safety Risk']].values.tolist()
+    
+    # Format the offences and risks into a string
+    offences_str = ', '.join([f"{offence}: {risk}" for offence, risk in offences_list])
+    
+    # Construct the final result string
+    result = f"Neighbourhood: {region} - {offences_str}"
+    return result
+
 
 def handle_submission():
     """Process and submit user input, updating conversation history."""
