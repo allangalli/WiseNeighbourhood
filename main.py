@@ -143,7 +143,10 @@ def main():
     """Main function to initialize and run the Streamlit application."""
     initialize_session()
     handle_sidebar()
-    
+
+    if "expander_state" not in st.session_state:
+        st.session_state["expander_state"] = True
+
     # Dashboard Main Panel
     col = st.columns((1, 4.5, 1), gap='medium')
 
@@ -155,47 +158,48 @@ def main():
         st.markdown("<h1 style='display: flex; text-align: center;'>SixSafety - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
         # Welcome message
         st.write("## Welcome! Please let us know what area of your neighbourhood safety you'd like to learn more about.",)
+        
+        # first_select = st.expander("Neighbourhood", expanded=st.session_state["expander_state"])
+            
+        # with first_select:
+        #     neighbourhood_select()
+        #     begin = st.button("Continue", use_container_width=True)
 
-        neighbourhood_select()
+        # if begin:
+        chat_container = st.container()
 
-
-        if 'neighbourhood' in st.session_state:
-            # Initialize chat container
-            chat_container = st.container()
-
-            # Display conversation history
-            for index, msg in enumerate(st.session_state.messages):
-                if msg.role == "assistant":
-                    with chat_container.chat_message("assistant"):
-                        display_ui_from_response(
-                            msg.content, index, len(st.session_state.messages) - 1)
-                else:
-                    chat_container.chat_message(msg.role).write(msg.content)
-
-            if len(st.session_state.messages) == 0:
-                st.session_state.input_text = chat_container.text_input(
-                    "Type what you are concerned about or what you would like to learn more about",
-                    value=st.session_state.get('input_text', '')
-                )
+        # Display conversation history
+        for index, msg in enumerate(st.session_state.messages):
+            if msg.role == "assistant":
+                with chat_container.chat_message("assistant"):
+                    display_ui_from_response(
+                        msg.content, index, len(st.session_state.messages) - 1)
             else:
-                print(len(st.session_state.messages))
-                print(st.session_state.messages)
-            col1, col2 = chat_container.columns(2)
+                chat_container.chat_message(msg.role).write(msg.content)
 
-            if col1.button("Submit", type="primary", use_container_width=True):
-                # Check if the input text is not empty
-                if len(st.session_state.messages) >= 6:
-                    st.write("## Placeholder: LLM output after intake information pass")
-                elif st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
-                    handle_submission()
-                else:
-                    st.warning("Please enter some text before submitting.")
+        if len(st.session_state.messages) == 0:
+            st.session_state.input_text = chat_container.text_input(
+                neighbourhood_select()
+            )
+        else:
+            print(len(st.session_state.messages))
+            print(st.session_state.messages)
+        col1, col2 = chat_container.columns(2)
 
-            if col2.button("Restart Session", use_container_width=True):
-                st.session_state.messages = []
-                st.session_state.user_inputs = {}
-                st.session_state.input_text = ''
-                st.rerun()
+        if col1.button("Submit", type="primary", use_container_width=True):
+            # Check if the input text is not empty
+            if len(st.session_state.messages) >= 6:
+                st.write("## Placeholder: LLM output after intake information pass")
+            elif st.session_state.input_text.strip() or len(st.session_state.messages) != 0:
+                handle_submission()
+            else:
+                st.warning("Please enter some text before submitting.")
+
+        if col2.button("Restart Session", use_container_width=True):
+            st.session_state.messages = []
+            st.session_state.user_inputs = {}
+            st.session_state.input_text = ''
+            st.rerun()
 
 
 if __name__ == "__main__":

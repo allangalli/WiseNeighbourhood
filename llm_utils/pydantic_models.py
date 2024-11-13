@@ -34,7 +34,7 @@ class MultiSelect(BaseUIElement):
 
 class Checkbox(BaseUIElement):
     """Defines checkboxes with multiple options."""
-    options: List[str] = Field(description="Options for the checkboxes")
+ 
 
 
 class Output(BaseModel):

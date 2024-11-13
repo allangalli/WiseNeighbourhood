@@ -15,7 +15,5 @@ def neighbourhood_select():
         index=None,
         placeholder='start typing...'
     )
-    st.button("Continue", use_container_width=True, key="neighbourhood")
     if neighbourhood is None:
-        st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)")
-
+        st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)")   

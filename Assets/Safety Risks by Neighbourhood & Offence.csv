@@ -307,14 +307,14 @@ Kingsway South (15),Assault,Low
 Kingsway South (15),Auto Theft,High
 Kingsway South (15),Break and Enter,Medium
 Kingsway South (15),Robbery,Medium
-Lambton Baby Point (114),Assault,Low
-Lambton Baby Point (114),Break and Enter,Low
-Lambton Baby Point (114),Auto Theft,Medium
-Lambton Baby Point (114),Robbery,Low
 L'Amoreaux West (147),Assault,Low
 L'Amoreaux West (147),Break and Enter,Low
 L'Amoreaux West (147),Auto Theft,Low
 L'Amoreaux West (147),Robbery,Medium
+Lambton Baby Point (114),Assault,Low
+Lambton Baby Point (114),Break and Enter,Low
+Lambton Baby Point (114),Auto Theft,Medium
+Lambton Baby Point (114),Robbery,Low
 Lansing-Westgate (38),Assault,Low
 Lansing-Westgate (38),Auto Theft,High
 Lansing-Westgate (38),Break and Enter,Medium
@@ -411,6 +411,10 @@ North Toronto (173),Assault,Medium
 North Toronto (173),Break and Enter,Medium
 North Toronto (173),Auto Theft,Low
 North Toronto (173),Robbery,Low
+O'Connor-Parkview (54),Assault,Medium
+O'Connor-Parkview (54),Break and Enter,Medium
+O'Connor-Parkview (54),Auto Theft,Medium
+O'Connor-Parkview (54),Robbery,Low
 Oakdale-Beverley Heights (154),Assault,High
 Oakdale-Beverley Heights (154),Auto Theft,High
 Oakdale-Beverley Heights (154),Break and Enter,Medium
@@ -423,10 +427,6 @@ Oakwood Village (107),Assault,Medium
 Oakwood Village (107),Break and Enter,Low
 Oakwood Village (107),Auto Theft,Medium
 Oakwood Village (107),Robbery,Medium
-O'Connor-Parkview (54),Assault,Medium
-O'Connor-Parkview (54),Break and Enter,Medium
-O'Connor-Parkview (54),Auto Theft,Medium
-O'Connor-Parkview (54),Robbery,Low
 Old East York (58),Assault,Medium
 Old East York (58),Break and Enter,Medium
 Old East York (58),Auto Theft,Low
