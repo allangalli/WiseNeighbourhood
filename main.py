@@ -205,8 +205,10 @@ def main():
                 index=0,
                 placeholder='start typing...',
             )
+            intake_output = get_offence_risk(neighbourhood)
+            print(intake_output)
             st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)") 
-            st.session_state.input_text = neighbourhood
+            st.session_state.input_text = intake_output
         else:
             print(len(st.session_state.messages))
             print(st.session_state.messages)
