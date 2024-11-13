@@ -8,6 +8,7 @@ import seaborn as sns
 def neighbourhood_select():
     nb = './Assets/Neighbourhoods - 4326/Neighbourhoods - 4326.shp'
     regions = gpd.read_file(nb)
+    return regions
     # regions['neighbourhood'] = regions['AREA_DE8'].str.replace(' \(.+\)', '').str.lower()
     neighbourhood = st.selectbox(
         'Choose a Neighbourhood',
@@ -15,5 +16,6 @@ def neighbourhood_select():
         index=None,
         placeholder='start typing...'
     )
-    if neighbourhood is None:
-        st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)")   
+    
+    st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)") 
+    print("test",neighbourhood)
