@@ -182,29 +182,26 @@ def main():
         if len(st.session_state.messages) == 0:
             neighbourhood = st.selectbox(
                 'Choose a Neighbourhood',
-                .sort_values().unique().tolist(),
-                index=None,
-                placeholder='start typing...'
+                neighbourhoods().sort_values().unique().tolist(),
+                index=0,
+                placeholder='start typing...',
             )
-    
             st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)") 
-            print("test",neighbourhood)
-
-            st.session_state.input_text = neighbourhood_select()
+            st.session_state.input_text = neighbourhood
         else:
             print(len(st.session_state.messages))
             print(st.session_state.messages)
+
         col1, col2 = chat_container.columns(2)
 
         if col1.button("Submit", type="primary", use_container_width=True):
             # Check if the input text is not empty
             if len(st.session_state.messages) >= 6:
                 st.write("## Placeholder: LLM output after intake information pass")
-            elif len(st.session_state.messages) == 0:
-                st.warning("Please select a neighbourhood before submitting")
-            else:
-                # or st.session_state.input_text.strip():
+            elif len(st.session_state.messages) != 0 or st.session_state.input_text.strip():
                 handle_submission()
+            else:
+                st.warning("Please select a neighbourhood before submitting")
 
         if col2.button("Restart Session", use_container_width=True):
             st.session_state.messages = []
