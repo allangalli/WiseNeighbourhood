@@ -250,28 +250,5 @@
         }
       ]
     }
-  },
-  {
-    "input": "Selected Crime Type: Assault\nNeighbourhood: Agincourt South-Malvern West (128) - Assault: Medium",
-    "output": {
-      "title": "Assault Prevention in Agincourt South-Malvern West",
-      "initial_answer": "Assault risk in this area is Medium. Staying alert and knowing your surroundings are key. ␃ When do you feel most vulnerable?",
-      "ui_elements": [
-        {
-          "type": "RadioButtons",
-          "label": "Time of Vulnerability",
-          "options": ["Early Morning", "Late Night", "Crowded Places"]
-        },
-        {
-          "type": "MultiSelect",
-          "label": "Preferred Safety Devices",
-          "options": ["Personal Alarm", "Pepper Spray", "Whistle"]
-        },
-        {
-          "type": "Checkbox",
-          "label": "Do you feel safe using public transportation? (Yes/No)"
-        }
-      ]
-    }
   }
 ]
