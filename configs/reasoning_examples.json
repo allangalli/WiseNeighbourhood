@@ -1,31 +1,31 @@
 [
     {
       "input": "Neighbourhood: Agincourt North (129) - Assault: Low, Auto Theft: Medium, Break and Enter: Low, Robbery: Medium",
-      "output": "Agincourt North has varying safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Low), and Robbery (Medium). ␃ Which crime types would you like to focus on, and do you have specific concerns about commuting or feeling safe during late hours?"
+      "output": "Agincourt North has varying safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Low), and Robbery (Medium). ␃ Which crime types would you like to focus on, and do you have specific concerns about how these risks impact your daily activities?"
     },
     {
-      "input": "Selected Crime Types: Auto Theft, Robbery\nConcerned About Commuting: Yes\nSecure During Late Hours: No",
-      "output": "You selected Auto Theft and Robbery and expressed concerns about commuting and feeling unsafe during late hours. ␃ How do you typically travel around the neighborhood, and do you take measures such as locking valuables or using safety apps?"
+      "input": "Selected Crime Types: Auto Theft, Robbery\nConcerns About Daily Activities: Yes",
+      "output": "You selected Auto Theft and Robbery and indicated that these risks affect your daily activities. ␃ How do these concerns shape your routines, such as your commuting methods or precautions you take when traveling or parking?"
     },
     {
-      "input": "Transportation Method: Car\nValuables Locked Out of Sight: Yes\nSafety Apps: No",
-      "output": "You primarily use a car, keep valuables locked out of sight, but don’t use safety apps. ␃ Would you consider additional security features for your vehicle, and do you have interest in local safety initiatives or defensive driving courses?"
+      "input": "Commuting Method: Car\nPrecautions Taken: Locking Valuables, Avoiding Isolated Areas",
+      "output": "You commute by car and take precautions like locking valuables and avoiding isolated areas. ␃ Are there additional measures you feel could improve your sense of safety, and do you consider your current strategies effective?"
     },
     {
       "input": "Neighbourhood: Agincourt South-Malvern West (128) - Break and Enter: Medium, Robbery: Medium",
-      "output": "Break and Enter and Robbery are both medium risk in Agincourt South-Malvern West. ␃ What home security measures have you implemented, and do you think outdoor lighting could improve your safety?"
+      "output": "Break and Enter and Robbery are both medium risk in Agincourt South-Malvern West. ␃ What specific home security practices do you currently use, and are there areas where you feel your safety could be enhanced?"
     },
     {
-      "input": "Home Security Measures: Security Cameras, Deadbolts\nOutdoor Areas Well-Lit: No",
-      "output": "You have security cameras and deadbolts but no outdoor lighting. ␃ Are there other security features you’re considering, and do you feel a community watch would benefit your neighborhood?"
+      "input": "Current Practices: Deadbolts, Window Locks\nAreas for Improvement: Outdoor Lighting",
+      "output": "You have deadbolts and window locks but feel outdoor lighting could be improved. ␃ Are there any additional security features you’re considering, and how do you assess the overall safety of your neighborhood?"
     },
     {
       "input": "Neighbourhood: Annex (95) - Assault: High, Break and Enter: High",
-      "output": "Both Assault and Break-In risks are high in Annex. ␃ When do you feel most at risk, and do you leave any entry points, such as windows, vulnerable?"
+      "output": "Both Assault and Break-In risks are high in Annex. ␃ When do you feel most vulnerable in your neighborhood, and do you take specific precautions during those times?"
     },
     {
-      "input": "Time of Day Most at Risk: Late Night\nWindows Open for Ventilation: Yes",
-      "output": "You feel most at risk late at night and leave windows open for ventilation. ␃ What specific security improvements would help you feel safer, and are there particular safety strategies you’d like to explore?"
+      "input": "Vulnerable Times: Late Night\nPrecautions: Walking with a Group, Avoiding Dark Areas",
+      "output": "You feel most vulnerable late at night and take precautions like walking with a group and avoiding dark areas. ␃ Are there other situations or locations where you feel at risk, and do you have any additional safety concerns?"
     }
-  ]
+]
   

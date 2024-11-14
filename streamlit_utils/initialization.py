@@ -56,4 +56,4 @@ def initialize_session():
         st.session_state["user_inputs"] = {}
 
     if 'input_text' not in st.session_state:
-        st.session_state.input_text = "I want to learn more about protecting my car from car thefts."
+        st.session_state.input_text = ""
