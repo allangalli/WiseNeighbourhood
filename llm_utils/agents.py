@@ -43,7 +43,8 @@ class ConversationalAgent(Agent):
         self.memory = []
         self.system_prompt = self.config["conversational_prompt"]
         self.few_shot_examples = load_few_shot_examples(
-            'configs/reasoning_examples.json')
+            'configs/few_shot_examples.json') + load_few_shot_examples(
+            'configs/acting_examples.json')
 
     def __call__(self, message: HumanMessage, stream_handler: Callable) -> str:
         self.memory.append(message)

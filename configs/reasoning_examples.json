@@ -1,23 +1,31 @@
 [
     {
-      "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
-      "output": "Alderwood has a medium risk for Auto Theft and Break and Enter, while Assault and Robbery are low risk. ␃ Which crime type would you like to focus on to receive specific safety recommendations?"
-    },
-    {
-      "input": "Neighbourhood: Annex (95) - Assault: High, Auto Theft: Low, Break and Enter: High, Robbery: High",
-      "output": "Annex has high risks for Assault, Break and Enter, and Robbery, but a low risk for Auto Theft. ␃ Please choose the crime type you are most concerned about to get targeted safety advice."
-    },
-    {
       "input": "Neighbourhood: Agincourt North (129) - Assault: Low, Auto Theft: Medium, Break and Enter: Low, Robbery: Medium",
-      "output": "Agincourt North has medium risk levels for Auto Theft and Robbery, with low risks for Assault and Break and Enter. ␃ Select the crime type you want to focus on to receive practical prevention tips."
+      "output": "Agincourt North has varying safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Low), and Robbery (Medium). ␃ Which crime types would you like to focus on, and do you have specific concerns about commuting or feeling safe during late hours?"
     },
     {
-      "input": "Neighbourhood: Agincourt South-Malvern West (128) - Assault: Medium, Auto Theft: Medium, Break and Enter: Medium, Robbery: Medium",
-      "output": "Agincourt South-Malvern West has medium risk for all crime types. ␃ Indicate which crime type you’d like to prioritize for more detailed safety guidance."
+      "input": "Selected Crime Types: Auto Theft, Robbery\nConcerned About Commuting: Yes\nSecure During Late Hours: No",
+      "output": "You selected Auto Theft and Robbery and expressed concerns about commuting and feeling unsafe during late hours. ␃ How do you typically travel around the neighborhood, and do you take measures such as locking valuables or using safety apps?"
     },
     {
-      "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
-      "output": "Alderwood’s safety risks include medium risk for Auto Theft and Break and Enter, and low risk for Assault and Robbery. ␃ Choose the crime type you’d like to address for tailored safety measures."
+      "input": "Transportation Method: Car\nValuables Locked Out of Sight: Yes\nSafety Apps: No",
+      "output": "You primarily use a car, keep valuables locked out of sight, but don’t use safety apps. ␃ Would you consider additional security features for your vehicle, and do you have interest in local safety initiatives or defensive driving courses?"
+    },
+    {
+      "input": "Neighbourhood: Agincourt South-Malvern West (128) - Break and Enter: Medium, Robbery: Medium",
+      "output": "Break and Enter and Robbery are both medium risk in Agincourt South-Malvern West. ␃ What home security measures have you implemented, and do you think outdoor lighting could improve your safety?"
+    },
+    {
+      "input": "Home Security Measures: Security Cameras, Deadbolts\nOutdoor Areas Well-Lit: No",
+      "output": "You have security cameras and deadbolts but no outdoor lighting. ␃ Are there other security features you’re considering, and do you feel a community watch would benefit your neighborhood?"
+    },
+    {
+      "input": "Neighbourhood: Annex (95) - Assault: High, Break and Enter: High",
+      "output": "Both Assault and Break-In risks are high in Annex. ␃ When do you feel most at risk, and do you leave any entry points, such as windows, vulnerable?"
+    },
+    {
+      "input": "Time of Day Most at Risk: Late Night\nWindows Open for Ventilation: Yes",
+      "output": "You feel most at risk late at night and leave windows open for ventilation. ␃ What specific security improvements would help you feel safer, and are there particular safety strategies you’d like to explore?"
     }
-]
+  ]
   

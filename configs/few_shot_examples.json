@@ -1,118 +1,158 @@
 [
     {
-      "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
-      "output": {
-        "title": "Crime Type Focus in Alderwood",
-        "full_answer": "Alderwood has mixed safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Medium), Robbery (Low). ␃ Which crime type would you like to focus on for more detailed safety advice?",
-        "ui_elements": [
-          {
-            "type": "RadioButtons",
-            "label": "Crime Type",
-            "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
-          },
-          {
-            "type": "MultiSelect",
-            "label": "Areas of Concern",
-            "options": ["Parks", "Parking Lots", "Residential Streets", "Near Public Transport"]
-          },
-          {
-            "type": "Checkbox",
-            "label": "Do you want information on local safety programs? (Yes/No)"
-          }
-        ]
-      }
-    },
-    {
-      "input": "Neighbourhood: Annex (95) - Assault: High, Auto Theft: Low, Break and Enter: High, Robbery: High",
-      "output": {
-        "title": "Crime Type Focus in Annex",
-        "full_answer": "Annex has high risks for Assault, Break and Enter, and Robbery, but a low risk for Auto Theft. ␃ Select the crime type you’re most concerned about to receive relevant safety recommendations.",
-        "ui_elements": [
-          {
-            "type": "RadioButtons",
-            "label": "Crime Type",
-            "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
-          },
-          {
-            "type": "MultiSelect",
-            "label": "Safety Strategies",
-            "options": ["Traveling in Groups", "Installing Security Cameras", "Using Safety Apps"]
-          },
-          {
-            "type": "Checkbox",
-            "label": "Do you avoid isolated areas at night? (Yes/No)"
-          }
-        ]
-      }
-    },
-    {
       "input": "Neighbourhood: Agincourt North (129) - Assault: Low, Auto Theft: Medium, Break and Enter: Low, Robbery: Medium",
       "output": {
         "title": "Crime Type Focus in Agincourt North",
-        "full_answer": "Agincourt North has medium risks for Auto Theft and Robbery, while Assault and Break and Enter are low risk. ␃ Which crime type do you want to focus on for tailored safety advice?",
+        "full_answer": "Agincourt North has varying safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Low), Robbery (Medium). ␃ Which crime types would you like to focus on?",
         "ui_elements": [
           {
-            "type": "RadioButtons",
-            "label": "Crime Type",
+            "type": "MultiSelect",
+            "label": "Crime Types",
             "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
           },
           {
-            "type": "MultiSelect",
-            "label": "Preferred Safety Measures",
-            "options": ["Parking in Well-Lit Areas", "Using a Steering Wheel Lock", "Avoiding Crowded Areas"]
+            "type": "Checkbox",
+            "label": "Are you concerned about safety while commuting?"
           },
           {
             "type": "Checkbox",
-            "label": "Do you want tips on neighborhood watch programs? (Yes/No)"
+            "label": "Do you feel secure in your neighborhood during late hours?"
           }
         ]
       }
     },
     {
-      "input": "Neighbourhood: Agincourt South-Malvern West (128) - Assault: Medium, Auto Theft: Medium, Break and Enter: Medium, Robbery: Medium",
+      "input": "Selected Crime Types: Auto Theft, Robbery\nConcerned About Commuting: Yes\nSecure During Late Hours: No",
       "output": {
-        "title": "Crime Type Focus in Agincourt South-Malvern West",
-        "full_answer": "Agincourt South-Malvern West has medium risk across all crime types. ␃ Choose the crime type you are most concerned about to get specific prevention tips.",
+        "title": "Auto Theft and Robbery Concerns in Agincourt North",
+        "full_answer": "Auto Theft and Robbery are both medium risks in Agincourt North. Consider how these concerns might influence your daily routines, such as parking habits or traveling after dark. ␃ How do you usually travel around your neighborhood?",
         "ui_elements": [
           {
             "type": "RadioButtons",
-            "label": "Crime Type",
-            "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
-          },
-          {
-            "type": "MultiSelect",
-            "label": "Current Safety Practices",
-            "options": ["Locking All Doors", "Avoiding Dark Areas", "Using Motion Sensor Lights"]
+            "label": "Transportation Method",
+            "options": ["Car", "Public Transit", "Walking", "Biking"]
           },
           {
             "type": "Checkbox",
-            "label": "Do you want advice on self-defense training? (Yes/No)"
+            "label": "Do you lock valuables out of sight when parking?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you use any safety apps while commuting?"
           }
         ]
       }
     },
     {
-      "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
+      "input": "Transportation Method: Car\nValuables Locked Out of Sight: Yes\nSafety Apps: No",
       "output": {
-        "title": "Crime Type Focus in Alderwood",
-        "full_answer": "Alderwood’s safety risks vary, with Auto Theft and Break and Enter rated as Medium, and Assault and Robbery as Low. ␃ Please select the crime type you want more information on and indicate your safety concerns.",
+        "title": "Refining Your Safety Plan",
+        "full_answer": "You mentioned using a car as your primary mode of transportation and locking valuables out of sight but not using safety apps. ␃ Are there any additional security features you’d consider for your vehicle?",
         "ui_elements": [
           {
-            "type": "RadioButtons",
-            "label": "Crime Type",
-            "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
-          },
-          {
             "type": "MultiSelect",
-            "label": "Safety Concerns",
-            "options": ["Unlit Streets", "Lack of Security Cameras", "Unmonitored Parking"]
+            "label": "Vehicle Security Features",
+            "options": ["Steering Wheel Lock", "GPS Tracker", "Alarm System", "Dash Cam"]
           },
           {
             "type": "Checkbox",
-            "label": "Do you use personal safety devices? (Yes/No)"
+            "label": "Would you consider enrolling in a defensive driving course?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Are you interested in learning about neighborhood safety meetings?"
+          }
+        ]
+      }
+    },
+    {
+      "input": "Neighbourhood: Agincourt South-Malvern West (128) - Break and Enter: Medium, Robbery: Medium",
+      "output": {
+        "title": "Break and Enter and Robbery Focus in Agincourt South-Malvern West",
+        "full_answer": "Break and Enter and Robbery are both medium risk concerns in Agincourt South-Malvern West. Identifying potential vulnerabilities at home and when you're out can be useful. ␃ What type of security measures do you currently have in place for your home?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Home Security Measures",
+            "options": ["Deadbolts", "Window Locks", "Security Cameras", "Alarm System"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you keep outdoor areas well-lit at night?"
+          },
+          {
+            "type": "RadioButtons",
+            "label": "Preferred Safety Strategy",
+            "options": ["Community Watch", "Self-Monitoring", "Hiring Security"]
+          }
+        ]
+      }
+    },
+    {
+      "input": "Home Security Measures: Security Cameras, Deadbolts\nOutdoor Areas Well-Lit: No\nPreferred Safety Strategy: Community Watch",
+      "output": {
+        "title": "Enhancing Your Home Safety",
+        "full_answer": "You currently use security cameras and deadbolts, but outdoor areas are not well-lit, and you prefer community watch as a safety strategy. ␃ Are there any additional home security features you’re considering?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Additional Security Features",
+            "options": ["Motion-Sensor Lights", "Reinforced Doors", "Window Bars"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Would you like to connect with your local community watch group?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you have concerns about emergency response times in your area?"
+          }
+        ]
+      }
+    },
+    {
+      "input": "Neighbourhood: Annex (95) - Assault: High, Break and Enter: High",
+      "output": {
+        "title": "Assault and Break-In Safety in Annex",
+        "full_answer": "Assault and Break-In risks are both high in Annex, requiring extra vigilance and strategic home security. ␃ When do you feel most at risk in your neighborhood?",
+        "ui_elements": [
+          {
+            "type": "RadioButtons",
+            "label": "Time of Day When You Feel Most at Risk",
+            "options": ["Morning", "Afternoon", "Evening", "Late Night"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you frequently leave windows open for ventilation?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you feel your current security measures are adequate?"
+          }
+        ]
+      }
+    },
+    {
+      "input": "Time of Day Most at Risk: Late Night\nWindows Open for Ventilation: Yes\nSecurity Measures Adequate: No",
+      "output": {
+        "title": "Addressing Nighttime Vulnerabilities",
+        "full_answer": "You feel most at risk during late-night hours, often leave windows open, and feel your current security measures are not adequate. ␃ What specific improvements would you like to make to enhance your safety?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Desired Security Improvements",
+            "options": ["Window Locks", "Smart Lighting", "Personal Safety Devices"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you want to explore self-defense options for added security?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Are you interested in attending a local safety workshop?"
           }
         ]
       }
     }
-  ]
+ ]
   
