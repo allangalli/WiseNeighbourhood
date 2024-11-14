@@ -3,3 +3,4 @@
     "ui_prompt": "Convert only the text after ␃ into a UI based on the structured JSON format. Ensure each UI section has a diverse set of elements, using RadioButtons, MultiSelect, Checkboxes, and, when appropriate, Sliders with a well-defined scale."
 }
   
+  

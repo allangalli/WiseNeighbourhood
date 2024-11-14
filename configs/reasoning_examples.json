@@ -1,18 +1,23 @@
 [
     {
-        "input": "I'm worried about my safety when using public transit in my neighborhood.\nNeighbourhood Safety Score: High\n",
-        "output": "For high-risk areas, transit safety means sticking to well-populated routes, avoiding isolated stations, and using safety apps to share your location. ␃ Refine your safety plan by selecting your usual transit times (morning, afternoon, night) and indicating any specific concerns like dimly lit stops or feeling unsafe during transfers."
+      "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
+      "output": "Alderwood has a medium risk for Auto Theft and Break and Enter, while Assault and Robbery are low risk. ␃ Which crime type would you like to focus on to receive specific safety recommendations?"
     },
     {
-        "input": "What are the best ways to secure my home from breaking and entering?\nNeighbourhood Safety Score: Medium\n",
-        "output": "In medium-risk neighborhoods, home security can be enhanced with smart locks, motion-sensor lights, and neighborhood watch involvement. Surveillance systems are a good consideration as well. ␃ Share your home’s key features, like having multiple entry points or vulnerable windows, and whether you prefer DIY or professional security solutions."
+      "input": "Neighbourhood: Annex (95) - Assault: High, Auto Theft: Low, Break and Enter: High, Robbery: High",
+      "output": "Annex has high risks for Assault, Break and Enter, and Robbery, but a low risk for Auto Theft. ␃ Please choose the crime type you are most concerned about to get targeted safety advice."
     },
     {
-        "input": "Neighbourhood Safety Score: Medium\nCar Parking Location: ['Street']\nSecurity Concerns: ['Car Theft', 'Vandalism']\n",
-        "output": "Street parking in a medium-risk area exposes your car to theft and vandalism. Use deterrents like a steering wheel lock, park under bright streetlights, and consider a dash cam. ␃ Would you like advice on specific anti-theft devices, or do you want to learn about local community safety initiatives to reduce vehicle crime?"
+      "input": "Neighbourhood: Agincourt North (129) - Assault: Low, Auto Theft: Medium, Break and Enter: Low, Robbery: Medium",
+      "output": "Agincourt North has medium risk levels for Auto Theft and Robbery, with low risks for Assault and Break and Enter. ␃ Select the crime type you want to focus on to receive practical prevention tips."
     },
     {
-        "input": "Neighbourhood Safety Score: High\nVacation Duration: ['2 Weeks']\nHome Protection Measures: ['Light Timers', 'Neighbor Check-ins']\n",
-        "output": "For a two-week vacation in a high-risk area, additional precautions like monitored alarm systems and video surveillance can help secure your home. Light timers and neighbor check-ins are a great start. ␃ Do you need recommendations for alarm services or tips on safeguarding specific vulnerable points like windows and back doors?"
+      "input": "Neighbourhood: Agincourt South-Malvern West (128) - Assault: Medium, Auto Theft: Medium, Break and Enter: Medium, Robbery: Medium",
+      "output": "Agincourt South-Malvern West has medium risk for all crime types. ␃ Indicate which crime type you’d like to prioritize for more detailed safety guidance."
+    },
+    {
+      "input": "Neighbourhood: Alderwood (20) - Assault: Low, Auto Theft: Medium, Break and Enter: Medium, Robbery: Low",
+      "output": "Alderwood’s safety risks include medium risk for Auto Theft and Break and Enter, and low risk for Assault and Robbery. ␃ Choose the crime type you’d like to address for tailored safety measures."
     }
 ]
+  
