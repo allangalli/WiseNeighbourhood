@@ -78,7 +78,44 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+def get_survey_respond(info):
+    # Initialize the response dictionary
+    response = {
+        "Neighbourhood": "",
+        "Crime Type": [],
+        "user-context": []
+    }
+    
+    # Parse the first message to get neighbourhood and crime data
+    first_message = info[0].content
+    if "Neighbourhood:" in first_message:
+        # Extract neighbourhood name and ID
+        neighbourhood_part = first_message.split(" - ")[0]
+        response["Neighbourhood"] = neighbourhood_part.replace("Neighbourhood: ", "")
+        
+        # Extract crime types and levels
+        crime_part = first_message.split(" - ")[1]
+        crime_items = crime_part.split(", ")
+        crime_data = []
+        for item in crime_items:
+            crime_type, level = item.strip().split(": ")
+            if level.rstrip(";"):  # Remove trailing semicolon if present
+                crime_data.append(f"{crime_type}: {level}")
+        response["Crime Type"] = crime_data
+    
+    # Parse user response (third message in the list) and AI response (fourth message)
+    if len(info) >= 4:
+        user_response = info[2].content
+        ai_response = info[3].content
+        
+        # Extract Q&A pairs
+        user_selections = user_response.strip().split(";\n")
+        for selection in user_selections:
+            if selection:  # Skip empty strings
+                q, a = selection.split(": ")
+                response["user-context"].extend([f"Q: {q}", f"A: {a.rstrip(';')}"]) 
 
+    return response
 
 def get_conversation() -> Optional[Conversation]:
     """Retrieve the current conversation instance from Streamlit's session state."""
@@ -206,18 +243,20 @@ def main():
                 placeholder='start typing...',
             )
             intake_output = get_offence_risk(neighbourhood)
-            print(intake_output)
+            ##print(intake_output)
             st.caption("If you don't know your neighbourhood, you can look it up here: [Find Your Neighbourhood](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/neighbourhood-profiles/find-your-neighbourhood/#location=&lat=&lng=&zoom=)") 
             st.session_state.input_text = intake_output
         else:
             print(len(st.session_state.messages))
-            print(st.session_state.messages)
+            ##print(st.session_state.messages)
 
         col1, col2 = chat_container.columns(2)
 
         if col1.button("Submit", type="primary", use_container_width=True):
             # Check if the input text is not empty
             if len(st.session_state.messages) >= 6:
+                respond = get_survey_respond(st.session_state.messages)
+                print(respond)
                 st.write("## Placeholder: LLM output after intake information pass")
             elif len(st.session_state.messages) != 0 or st.session_state.input_text.strip():
                 handle_submission()
