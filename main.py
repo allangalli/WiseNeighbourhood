@@ -19,6 +19,7 @@ import requests
 import time
 import threading
 import random
+import json
 
 # Page configuration
 st.set_page_config(
@@ -248,7 +249,7 @@ def final_submission():
 
     # Prepare the input data
     respond = get_survey_respond(st.session_state.messages)
-    inputData = respond
+    inputData = json.dumps(respond)
     id = st.session_state["user_id"]
 
     # Function to send plan request in a separate thread
@@ -261,12 +262,15 @@ def final_submission():
     progress_bar = st.progress(0)
     status_text = st.empty()
     #st.success("Your plan is start to generating.")
+    
+    # Display a message about the expected time
+    st.write("⏳ This process might take some time, up to 2 minutes.")
 
     # Start the send_request function in a separate thread
     send_thread = threading.Thread(target=send_request)
     send_thread.start()
 
-    second = random.randint(50, 65)
+    second = random.randint(70,90)
     # Display the progress bar for 1.5 minutes (90 seconds)
     for percent_complete in range(second):
         time.sleep(1)  # Sleep for 1 second
@@ -276,7 +280,6 @@ def final_submission():
 
     # Wait for the send_request thread to finish
     send_thread.join()
-
 
     plan_response = get_plan(id)
     if plan_response and plan_response.get('success'):
@@ -293,7 +296,7 @@ def final_submission():
 def main():
     """Main function to initialize and run the Streamlit application."""
     initialize_session()
-    handle_sidebar()
+    ##handle_sidebar()
 
     if "expander_state" not in st.session_state:
         st.session_state["expander_state"] = True
