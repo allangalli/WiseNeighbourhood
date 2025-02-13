@@ -1,25 +1,25 @@
 """Streamlit app module for interactive chat management and display."""
+import json
+import random
+import threading
+import time
+import uuid
 from typing import Optional
 
-import streamlit as st
-from langchain_core.messages import AIMessage, HumanMessage
-import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import pandas as pd
+import requests
 import seaborn as sns
+import streamlit as st
+from langchain_core.messages import AIMessage, HumanMessage
 
 from llm_utils.conversation import Conversation
+from llm_utils.maps import neighbourhood_select
 from llm_utils.prompt_assembly import prompt_assembly
 from llm_utils.stream_handler import StreamUntilSpecialTokenHandler
 from streamlit_utils.initialization import initialize_session
 from streamlit_utils.ui_creator import display_ui_from_response
-from llm_utils.maps import neighbourhood_select
-import uuid
-import requests
-import time
-import threading
-import random
-import json
 
 # Page configuration
 st.set_page_config(
@@ -309,12 +309,14 @@ def main():
         st.session_state.plan_displayed = False
 
     # Dashboard Main Panel
+    st.markdown("", unsafe_allow_html=True)
+    
     col = st.columns((1, 4.5, 1), gap='medium')
 
     with col[1]:
-        left_co, cent_co,last_co = st.columns((1.5, 4.5, 2))
+        left_co, cent_co,last_co = st.columns((1.5, 20, 2))
         with cent_co:
-            st.image("./Assets/TPS_Logo.png", width=120)
+            st.image("./Slide Deck/Logo_White_Circular.png", width=200)
 
         st.markdown("<h1 style='display: flex; text-align: center;'>SixSafety - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
         # Welcome message
