@@ -31,8 +31,8 @@ def initialize_models():
         "gemini-pro"
     ]
 
-    st.session_state["sel_model_conversation"] = st.session_state["supp_models_conversation"][2]
-    st.session_state["sel_model_ui"] = st.session_state["supp_models_ui"][2]
+    st.session_state["sel_model_conversation"] = st.session_state["supp_models_conversation"][1]
+    st.session_state["sel_model_ui"] = st.session_state["supp_models_ui"][1]
 
 
 def initialize_session():
@@ -56,4 +56,4 @@ def initialize_session():
         st.session_state["user_inputs"] = {}
 
     if 'input_text' not in st.session_state:
-        st.session_state.input_text = "I want to learn more about protecting my car from car thefts."
+        st.session_state.input_text = ""

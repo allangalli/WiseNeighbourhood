@@ -15,8 +15,8 @@ class Conversation:
     def __init__(
             self,
             api_keys: dict,
-            model_name_conv="gemini-pro",
-            model_name_ui="gemini-pro") -> None:
+            model_name_conv="gpt-4-turbo",
+            model_name_ui="gpt-4-turbo") -> None:
         """Initialize conversation and UI agents using given API keys and model names."""
         self.api_keys = api_keys
 

@@ -1,122 +1,158 @@
 [
     {
-        "input": "I am concerned about walking home alone late at night. Neighbourhood Safety Score: High Risk",
-        "output": {
-            "title": "Night Walk Safety in High-Risk Areas 🌃",
-            "full_answer": "Walking alone at night in a high-risk area requires taking extra precautions. Stay visible and alert. ␃ Choose your usual safety measures and specify your walking time to get tailored advice.",
-            "ui_elements": [
-                {
-                    "type": "RadioButtons",
-                    "label": "Walking Time",
-                    "options": ["Evening", "Late Night"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Preferred Safety Measures",
-                    "options": ["Stay in well-lit areas", "Travel in groups", "Use a safety app", "Carry a safety device"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Route Preferences",
-                    "options": ["Avoid isolated areas", "Use main streets", "Stay near busy places"]
-                }
-            ]
-        }
+      "input": "Neighbourhood: Agincourt North (129) - Assault: Low, Auto Theft: Medium, Break and Enter: Low, Robbery: Medium",
+      "output": {
+        "title": "Crime Type Focus in Agincourt North",
+        "full_answer": "Agincourt North has varying safety risks: Assault (Low), Auto Theft (Medium), Break and Enter (Low), Robbery (Medium). ␃ Which crime types would you like to focus on?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Crime Types",
+            "options": ["Assault", "Auto Theft", "Break and Enter", "Robbery"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Are you concerned about safety while commuting?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you feel secure in your neighborhood during late hours?"
+          }
+        ]
+      }
     },
     {
-        "input": "How can I protect my car from theft? Neighbourhood Safety Score: Medium Risk",
-        "output": {
-            "title": "Car Theft Prevention in Medium-Risk Areas 🚗",
-            "full_answer": "In medium-risk areas, using anti-theft measures and parking smartly can help. Keep valuables out of sight. ␃ Select where you park and the anti-theft devices you use or consider.",
-            "ui_elements": [
-                {
-                    "type": "Dropdown",
-                    "label": "Parking Location",
-                    "options": ["Street", "Garage", "Driveway"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Anti-Theft Devices",
-                    "options": ["Car alarm", "Steering lock", "GPS tracker", "None"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Security Concerns",
-                    "options": ["Car theft", "Vandalism", "Break-ins"]
-                }
-            ]
-        }
+      "input": "Selected Crime Types: Auto Theft, Robbery\nConcerned About Commuting: Yes\nSecure During Late Hours: No",
+      "output": {
+        "title": "Auto Theft and Robbery Concerns in Agincourt North",
+        "full_answer": "Auto Theft and Robbery are both medium risks in Agincourt North. Consider how these concerns might influence your daily routines, such as parking habits or traveling after dark. ␃ How do you usually travel around your neighborhood?",
+        "ui_elements": [
+          {
+            "type": "RadioButtons",
+            "label": "Transportation Method",
+            "options": ["Car", "Public Transit", "Walking", "Biking"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you lock valuables out of sight when parking?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you use any safety apps while commuting?"
+          }
+        ]
+      }
     },
     {
-        "input": "What should I do to make my home safer from break-ins? Neighbourhood Safety Score: Low Risk",
-        "output": {
-            "title": "Home Security Basics for Low-Risk Areas 🏡",
-            "full_answer": "Even in a low-risk area, securing windows and using smart lighting can be effective. ␃ Indicate your home setup and interest level in security technology.",
-            "ui_elements": [
-                {
-                    "type": "RadioButtons",
-                    "label": "Home Type",
-                    "options": ["Apartment", "Single-family home", "Townhouse"]
-                },
-                {
-                    "type": "Slider",
-                    "label": "Interest in Security Tech",
-                    "range": [1, 10]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Current Security Measures",
-                    "options": ["Window locks", "Motion-activated lights", "Smart doorbell", "None"]
-                }
-            ]
-        }
+      "input": "Transportation Method: Car\nValuables Locked Out of Sight: Yes\nSafety Apps: No",
+      "output": {
+        "title": "Refining Your Safety Plan",
+        "full_answer": "You mentioned using a car as your primary mode of transportation and locking valuables out of sight but not using safety apps. ␃ Are there any additional security features you’d consider for your vehicle?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Vehicle Security Features",
+            "options": ["Steering Wheel Lock", "GPS Tracker", "Alarm System", "Dash Cam"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Would you consider enrolling in a defensive driving course?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Are you interested in learning about neighborhood safety meetings?"
+          }
+        ]
+      }
     },
     {
-        "input": "How can I reduce the risk of being assaulted while jogging? Neighbourhood Safety Score: High Risk",
-        "output": {
-            "title": "Jogging Safety in High-Risk Areas 🏃‍♂️",
-            "full_answer": "Jogging in a high-risk area requires extra vigilance. Choose busy trails and run during daylight. ␃ Select your jogging frequency and preferred safety measures.",
-            "ui_elements": [
-                {
-                    "type": "Slider",
-                    "label": "Jogging Frequency (Days per Week)",
-                    "range": [1, 7]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Safety Gear",
-                    "options": ["Reflective clothing", "Whistle", "Pepper spray", "Running buddy"]
-                },
-                {
-                    "type": "RadioButtons",
-                    "label": "Preferred Jogging Time",
-                    "options": ["Morning", "Afternoon", "Daylight only"]
-                }
-            ]
-        }
+      "input": "Neighbourhood: Agincourt South-Malvern West (128) - Break and Enter: Medium, Robbery: Medium",
+      "output": {
+        "title": "Break and Enter and Robbery Focus in Agincourt South-Malvern West",
+        "full_answer": "Break and Enter and Robbery are both medium risk concerns in Agincourt South-Malvern West. Identifying potential vulnerabilities at home and when you're out can be useful. ␃ What type of security measures do you currently have in place for your home?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Home Security Measures",
+            "options": ["Deadbolts", "Window Locks", "Security Cameras", "Alarm System"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you keep outdoor areas well-lit at night?"
+          },
+          {
+            "type": "RadioButtons",
+            "label": "Preferred Safety Strategy",
+            "options": ["Community Watch", "Self-Monitoring", "Hiring Security"]
+          }
+        ]
+      }
     },
     {
-        "input": "What precautions should I take when leaving my house for vacation? Neighbourhood Safety Score: Medium Risk",
-        "output": {
-            "title": "Vacation Home Safety for Medium-Risk Areas ✈️",
-            "full_answer": "Before leaving for vacation in a medium-risk area, ensure your home is secure. ␃ Select your vacation duration and current security practices.",
-            "ui_elements": [
-                {
-                    "type": "Slider",
-                    "label": "Vacation Duration (Days)",
-                    "range": [1, 30]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Security Practices",
-                    "options": ["Use light timers", "Ask a neighbor to check in", "Stop mail delivery", "None"]
-                },
-                {
-                    "type": "Checkbox",
-                    "label": "Extra Security Options",
-                    "options": ["Install security cameras", "Smart locks", "Alarm system"]
-                }
-            ]
-        }
+      "input": "Home Security Measures: Security Cameras, Deadbolts\nOutdoor Areas Well-Lit: No\nPreferred Safety Strategy: Community Watch",
+      "output": {
+        "title": "Enhancing Your Home Safety",
+        "full_answer": "You currently use security cameras and deadbolts, but outdoor areas are not well-lit, and you prefer community watch as a safety strategy. ␃ Are there any additional home security features you’re considering?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Additional Security Features",
+            "options": ["Motion-Sensor Lights", "Reinforced Doors", "Window Bars"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Would you like to connect with your local community watch group?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you have concerns about emergency response times in your area?"
+          }
+        ]
+      }
+    },
+    {
+      "input": "Neighbourhood: Annex (95) - Assault: High, Break and Enter: High",
+      "output": {
+        "title": "Assault and Break-In Safety in Annex",
+        "full_answer": "Assault and Break-In risks are both high in Annex, requiring extra vigilance and strategic home security. ␃ When do you feel most at risk in your neighborhood?",
+        "ui_elements": [
+          {
+            "type": "RadioButtons",
+            "label": "Time of Day When You Feel Most at Risk",
+            "options": ["Morning", "Afternoon", "Evening", "Late Night"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you frequently leave windows open for ventilation?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you feel your current security measures are adequate?"
+          }
+        ]
+      }
+    },
+    {
+      "input": "Time of Day Most at Risk: Late Night\nWindows Open for Ventilation: Yes\nSecurity Measures Adequate: No",
+      "output": {
+        "title": "Addressing Nighttime Vulnerabilities",
+        "full_answer": "You feel most at risk during late-night hours, often leave windows open, and feel your current security measures are not adequate. ␃ What specific improvements would you like to make to enhance your safety?",
+        "ui_elements": [
+          {
+            "type": "MultiSelect",
+            "label": "Desired Security Improvements",
+            "options": ["Window Locks", "Smart Lighting", "Personal Safety Devices"]
+          },
+          {
+            "type": "Checkbox",
+            "label": "Do you want to explore self-defense options for added security?"
+          },
+          {
+            "type": "Checkbox",
+            "label": "Are you interested in attending a local safety workshop?"
+          }
+        ]
+      }
     }
-]
+ ]
+  
