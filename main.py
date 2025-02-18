@@ -316,7 +316,7 @@ def main():
     with col[1]:
         left_co, cent_co,last_co = st.columns((1.5, 20, 2))
         with cent_co:
-            st.image("./Slide Deck/Logo_White_Circular.png", width=200)
+            st.image("Logo_White_Circular.png", width=200)
 
         st.markdown("<h1 style='display: flex; text-align: center;'>SixSafety - Your Neighbourhood Safety Advisor</h1>", unsafe_allow_html=True)
         # Welcome message
