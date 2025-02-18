@@ -87,7 +87,7 @@ st.markdown("""
 # Function to send plan request to Node.js server
 def send_plan_request(inputData, id):
     # Replace 'your-nodejs-server-address' with your actual server address or IP
-    url = 'http://15.222.45.62:5200/plan'
+    url = 'https://api.ai-fundamentals.live/api2/plan'
     payload = {
         'inputData': inputData,
         'id': id
@@ -103,7 +103,7 @@ def send_plan_request(inputData, id):
 
 # Function to get plan from Node.js server
 def get_plan(id):
-    url = 'http://15.222.45.62:5200/getPlan'
+    url = 'https://api.ai-fundamentals.live/api2/getPlan'
     payload = {'id': id}
     headers = {'Content-Type': 'application/json'}
     try:
